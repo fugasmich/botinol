@@ -1,7 +1,7 @@
 import telebot
 from BetOddClass import BetODD
 
-TOKEN = '1001485513:AAHSRknpCk7m6OwyViqO2K3F8xxVbEAzNlw'
+TOKEN ='1001485513:AAHSRknpCk7m6OwyViqO2K3F8xxVbEAzNlw'
 
 bot = telebot.TeleBot(TOKEN)
 bet_odd = BetODD()
