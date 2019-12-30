@@ -1,1 +1,1 @@
-worker: python live_data.py
+worker: python Bot_compot.py
