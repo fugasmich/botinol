@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="postgres@localhost" uuid="608549d3-568c-433f-bb77-773fbbbda405">
+    <data-source source="LOCAL" name="postgrHeroku" uuid="608549d3-568c-433f-bb77-773fbbbda405">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
+      <remarks>connect to heroku</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
+      <jdbc-url>jdbc:postgresql://ec2-54-246-121-32.eu-west-1.compute.amazonaws.com:5432/d80557c2o19rui?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory</jdbc-url>
+      <driver-properties>
+        <property name="sslmode" value="verify-ca" />
+      </driver-properties>
     </data-source>
   </component>
 </project>
