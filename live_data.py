@@ -374,8 +374,8 @@ def  check_send_message():
             with open('mb.log', 'w'):
                 logging.basicConfig(filename="mb.log", level=logging.INFO)
             time.sleep(30)
-        except:
-            print("бока")
+        except Exception as ex:
+            print(ex)
 
 p1 = Process(target=check_send_message(),args=())
 p1.start()
