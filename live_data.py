@@ -1,4 +1,4 @@
-
+import logging
 import re
 import time
 from enum import Enum
@@ -13,6 +13,11 @@ from BetOddClass import BetODD
 
 
 class ENUMS(Enum):
+    DATABASE_NAME = 'd3m04puham5djm'
+    HOST = 'ec2-54-246-121-32.eu-west-1.compute.amazonaws.com'
+    USER = 'fqbolpemibntxw'
+    PASSWORD = 'e54c3f3415b05b130a26f9e8f59711e59bfe4d7373488bff92576ff3f4c728aa'
+    PORT = '5432'
     VS = "~vSv~ "
     URL_MAIN = "https://melbet.com/ru/live/football/"
     URL_JsON = 'https://melbet.com/LiveFeed/Get1x2_VZip?sports=1&count=50&mode=4&cyberFlag=2&partner=8'
@@ -31,8 +36,7 @@ class ENUMS(Enum):
 
 
 class LiveData():
-
-
+    logging.basicConfig(filename="mb.log", level=logging.INFO)
 
 
 
@@ -61,6 +65,21 @@ class LiveData():
     html = ''
     sel_soup = BeautifulSoup(html, 'lxml')
 
+    def open_connect(self):
+        '''Connect to an existing database'''
+        con = psycopg2.connect()
+        try:
+            con = psycopg2.connect(database=ENUMS.DATABASE_NAME.value,
+                                   user=ENUMS.USER.value,
+                                   password=ENUMS.PASSWORD.value,
+                                   host=ENUMS.HOST.value,
+                                   port=ENUMS.PORT.value)
+            logging.info('connection is is success')
+        except ConnectionError as ex:
+            logging.error(ex)
+        return con
+
+
     def run_driver(self):
         web_r = requests.get(ENUMS.URL_MAIN.value)
         web_soup = BeautifulSoup(web_r.text, 'lxml')
@@ -84,7 +103,11 @@ class LiveData():
         for i in range(0, len(time_tmp)):
             if i % 2 != 0:
                 self.times.append(time_tmp[i])
-
+        if len(self.times) != 0:
+            logging.info('timers list was appended')
+        else:
+            logging.error('timers list has no appended')
+        return self.times
 
 
     # getting id of games
@@ -92,28 +115,33 @@ class LiveData():
         for x in self.sel_soup.find_all('a', attrs={'class': 'nameLink'}):
             self.id_live.append(x.get('id'))
         if len(self.id_live) != 0 :
-            print('Ай-ди собраны')
+            logging.info('ides list was appended')
         else:
-            print('Ай-ди не собраны')
+            logging.error('ides list has no append')
         return self.id_live
 
     # get the games coefficients by own id
     def get_coefficients(self, id):
-        i = 1
-        for x in self.sel_soup.find_all("span", attrs={'class': 'num'}):
-            if i > 10:
-                i = 1
-            if x.get('data-gameid') == id:
-                if x.get('data-param') != '0':
-                    self.coeffficients.append(id + " " + 't' + str(i) + "*" + " LCK" if x.get('data-block') == '0' or x.get(
-                        'data-block') == 'true' else id + " " + 't' + x.get('data-type') + "*" + " " + x.get(
-                        'data-coef') + "(" +
-                                                     x.get('data-param') + ")")
-                else:
-                    self.coeffficients.append(id + " " + 't' + str(i) + "*" + " LCK" if x.get('data-block') == '0' or x.get(
-                        'data-block') == 'true' else id + " " + 't' + x.get('data-type') + "*" + " " + x.get(
-                        'data-coef'))
-                i += 1
+
+        try:
+            i = 1
+            for x in self.sel_soup.find_all("span", attrs={'class': 'num'}):
+                if i > 10:
+                    i = 1
+                if x.get('data-gameid') == id:
+                    if x.get('data-param') != '0':
+                        self.coeffficients.append(id + " " + 't' + str(i) + "*" + " LCK" if x.get('data-block') == '0' or x.get(
+                            'data-block') == 'true' else id + " " + 't' + x.get('data-type') + "*" + " " + x.get(
+                            'data-coef') + "(" +
+                                                         x.get('data-param') + ")")
+                    else:
+                        self.coeffficients.append(id + " " + 't' + str(i) + "*" + " LCK" if x.get('data-block') == '0' or x.get(
+                            'data-block') == 'true' else id + " " + 't' + x.get('data-type') + "*" + " " + x.get(
+                            'data-coef'))
+                    i += 1
+            logging.info('all coefficients was appended in the list')
+        except Exception as ex:
+            logging.error(ex)
 
 
     # get the ides and put its for search
@@ -121,9 +149,9 @@ class LiveData():
         for i in range(0, len(self.id_live)):
             self.get_coefficients(self.id_live[i])
         if len(self.coeffficients) != 0:
-            print('данные о коэффициентах собраны')
+            logging.info('данные о коэффициентах собраны')
         else:
-            print('данные о коэффициентах собраны')
+            logging.error('данные о коэффициентах собраны')
     # get the coefficients value by
     # #type key
     def coefficient_extractor(self, key):
@@ -194,14 +222,14 @@ class LiveData():
             # print( list_js['Value'][t]['O1'] + ' vs ' + list_js['Value'][t]['O2'])
     # create database
     def table_create(self):
-        con = psycopg2.connect(
-            database="postgres",
-            user="dimsan",
-            password="domi21092012nika",
-            host="127.0.0.1",
-            port="5432"
-        )
-
+        # con = psycopg2.connect(
+        #     database="postgres",
+        #     user="dimsan",
+        #     password="domi21092012nika",
+        #     host="127.0.0.1",
+        #     port="5432"
+        # )
+        con = self.open_connect()
         cur = con.cursor()
         cur.execute('''CREATE TABLE  if not exists live_games  
          (ID VARCHAR,
@@ -238,11 +266,12 @@ class LiveData():
             # read database configuration
 
         # connect to the PostgreSQL database
-        conn = psycopg2.connect(database="postgres",
-                                user="dimsan",
-                                password="domi21092012nika",
-                                host="127.0.0.1",
-                                port="5432")
+        # conn = psycopg2.connect(database="postgres",
+        #                         user="dimsan",
+        #                         password="domi21092012nika",
+        #                         host="127.0.0.1",
+        #                         port="5432")
+        conn = self.open_connect()
         # create a new cursor
         cur = conn.cursor()
         cur.execute(clear)
@@ -306,13 +335,14 @@ class LiveData():
         '''remove all dublicates from line_table'''
         sql = """DELETE FROM live_games WHERE ctid NOT IN
     (SELECT max(ctid) FROM live_games GROUP BY live_games.*);"""
-        con = psycopg2.connect(
-            database="postgres",
-            user="dimsan",
-            password="domi21092012nika",
-            host="127.0.0.1",
-            port="5432"
-        )
+        # con = psycopg2.connect(
+        #     database="postgres",
+        #     user="dimsan",
+        #     password="domi21092012nika",
+        #     host="127.0.0.1",
+        #     port="5432"
+        # )
+        con = self.open_connect()
         cur = con.cursor()
         cur.execute(sql)
         con.commit()
@@ -337,11 +367,12 @@ def  check_send_message():
     live_data = LiveData()
     betOdd = BetODD()
     while True:
-
         try:
             live_data.main()
             betOdd.create_line_table()
             betOdd.select_by_waiting()
+            with open('mb.log', 'w'):
+                logging.basicConfig(filename="mb.log", level=logging.INFO)
             time.sleep(30)
         except:
             print("бока")
