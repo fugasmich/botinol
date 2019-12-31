@@ -44,7 +44,7 @@ def  check_send_message():
             #     logging.basicConfig(filename="mb.log", level=logging.INFO)
             time.sleep(30)
         except:
-            print("бока")
+            print("falsess")
 
 p1 = Process(target=check_send_message(),args=())
 p1.start()
