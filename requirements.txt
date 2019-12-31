@@ -59,7 +59,7 @@ python-rex==0.4
 python-telegram-bot==12.2.0
 pytils==0.3
 pytz==2019.3
-
+pywin32==227
 PyYAML==5.2
 regex==2019.12.20
 requests==2.7.0
