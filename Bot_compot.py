@@ -7,7 +7,7 @@ from BetOddClass import BetODD
 from live_data import LiveData
 
 TOKEN ='1001485513:AAHSRknpCk7m6OwyViqO2K3F8xxVbEAzNlw'
-
+live_data = LiveData()
 bot = telebot.TeleBot(TOKEN)
 bet_odd = BetODD()
 
@@ -22,7 +22,7 @@ def send_welcome(message):
 
 @bot.message_handler(commands=['run'])
 def send_data(message):
-
+    live_data.main()
     bet_odd.init_betodds()
     s = bet_odd.t
     if len(s)==0:
