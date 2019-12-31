@@ -6,9 +6,19 @@
       <synchronize>true</synchronize>
       <remarks>connect to heroku</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://ec2-54-246-121-32.eu-west-1.compute.amazonaws.com:5432/d80557c2o19rui?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory</jdbc-url>
+      <jdbc-url>jdbc:postgresql://ec2-54-246-121-32.eu-west-1.compute.amazonaws.com:5432/d3m04puham5djm?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory</jdbc-url>
       <driver-properties>
-        <property name="sslmode" value="verify-ca" />
+        <property name="sslmode" value="require" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="postgres@her" uuid="4ede30a2-56d4-41a2-8cdf-8f4efe85591e">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-54-246-121-32.eu-west-1.compute.amazonaws.com:5432/d3m04puham5djm</jdbc-url>
+      <driver-properties>
+        <property name="ssl" value="true" />
+        <property name="sslmode" value="require" />
       </driver-properties>
     </data-source>
   </component>

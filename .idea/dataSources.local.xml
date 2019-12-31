@@ -6,9 +6,17 @@
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <secret-storage>master_key</secret-storage>
-      <user-name>uyaoarywxcbktg</user-name>
+      <user-name>fqbolpemibntxw</user-name>
       <introspection-schemas>postgres:public</introspection-schemas>
+    </data-source>
+    <data-source name="postgres@her" uuid="4ede30a2-56d4-41a2-8cdf-8f4efe85591e">
+      <database-info product="PostgreSQL" version="11.6 (Ubuntu 11.6-1.pgdg16.04+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>fqbolpemibntxw</user-name>
+      <introspection-schemas>d3m04puham5djm:*</introspection-schemas>
     </data-source>
   </component>
 </project>
