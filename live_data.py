@@ -2,15 +2,16 @@
 # coding=utf-8
 
 import logging
-import os
+
 import re
 import time
-from enum import Enum
+
 from multiprocessing import Process
 
 import psycopg2
 import requests as requests
 from bs4 import BeautifulSoup
+from enums import Enum
 from selenium import webdriver
 
 from BetOddClass import BetODD
