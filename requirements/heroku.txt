@@ -62,7 +62,7 @@ pytils==0.3
 pytz==2019.3
 PyYAML==5.2
 regex==2019.12.20
-requests==2.7.0
+requests==2.20.0
 ruamel.yaml==0.15.100
 schedule==0.6.0
 selection==0.0.14
