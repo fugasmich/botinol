@@ -2,6 +2,7 @@
 import time
 from multiprocessing import Process
 
+import telebot
 
 from BetOddClass import BetODD
 from live_data import LiveData
