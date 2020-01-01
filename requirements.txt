@@ -43,7 +43,7 @@ passlib==1.7.2
 pathtools==0.1.2
 plumbum==1.6.8
 portalocker==1.5.2
-psycopg2==2.8.4
+psycopg2==2.4.4
 pyasn1==0.4.8
 pycparser==2.19
 pydivert==2.1.0
