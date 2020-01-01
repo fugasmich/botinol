@@ -188,6 +188,7 @@ class LiveData():
         # return score
         if  len(self.score) !=0:
             print("информация о счете собрана")
+
         else:
             print("информация о счете не собрана")
 
@@ -237,6 +238,7 @@ class LiveData():
         for t in range(0, len(list_js['Value'])):
             self.teams.append(list_js['Value'][t]['L'] + ':' + " " + list_js['Value'][t]['O1'] + ' vs ' + list_js['Value'][t]['O2'])
             # print( list_js['Value'][t]['O1'] + ' vs ' + list_js['Value'][t]['O2'])
+            print(self.teams[0])
     # create database
     def table_create(self):
         # con = psycopg2.connect(
