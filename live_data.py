@@ -86,11 +86,11 @@ class LiveData():
 
     def run_driver(self):
 
-        path = os.getcwd()+'\\geckodriver.exe'
+
         web_r = requests.get(ENUMS.URL_MAIN.value)
         web_soup = BeautifulSoup(web_r.text, 'lxml')
 
-        self.driver = webdriver.Firefox(executable_path=r'geckodriver.exe')
+        self.driver = webdriver.Firefox()
         self.driver.get(ENUMS.URL_MAIN.value)
         self.html =  self.driver.execute_script("return document.documentElement.outerHTML")
         self.sel_soup = BeautifulSoup(self.html, 'lxml')
