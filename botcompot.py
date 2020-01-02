@@ -1,7 +1,9 @@
+#!/usr/bin/env python3
+
+
 from telegram import Update, Bot
 from telegram import KeyboardButton
 from telegram import ReplyKeyboardMarkup
-from telegram import ReplyKeyboardRemove
 from telegram.ext import Updater
 from telegram.ext import CallbackContext
 from telegram.ext import Filters
