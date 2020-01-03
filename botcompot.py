@@ -11,6 +11,7 @@ from telegram.ext import Filters
 from telegram.ext import MessageHandler
 from telegram.utils.request import Request
 
+# from live_data import LiveData
 from live_data import LiveData
 
 button_tasher ='Кэф просел'
@@ -32,7 +33,6 @@ def button_updatedata_handler(update: Update, context: CallbackContext):
     live = LiveData()
     live.main()
     update.message.reply_text(
-
         text='данные обновлены',
         reply_markup=ReplyKeyboardRemove()
 
@@ -62,10 +62,14 @@ def message_handler(update: Update, context: CallbackContext):
         return button_maxgoals_handler(update=update, context=context)
     reply_markup = ReplyKeyboardMarkup(
         keyboard=[
-            KeyboardButton(text=button_update),
+
+            [
+                KeyboardButton(text=button_update),
+                ],
 
             [
                 KeyboardButton(text=button_tasher), KeyboardButton(text=button_goals_summ),
+
             ],
         ],
         resize_keyboard=True,

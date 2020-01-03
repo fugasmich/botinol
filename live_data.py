@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 from enum import Enum
 from selenium import webdriver
 
-from BetOddClass import BetODD
+# from BetOddClass import BetODD
 
 
 class ENUMS(Enum):
@@ -44,7 +44,7 @@ class ENUMS(Enum):
 
 
 class LiveData():
-    logging.basicConfig(filename="mb.log", level=logging.INFO)
+    # //logging.basicConfig(filename="mb.log", level=logging.INFO)
 
 
 
@@ -91,18 +91,18 @@ class LiveData():
     def run_driver(self):
 
 
-        chrome_options = webdriver.ChromeOptions()
-        chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
-        chrome_options.add_argument("--headless")
-        chrome_options.add_argument("--disable-dev-shm-usage")
-        chrome_options.add_argument("--no-sandbox")
-        self.driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
+        # chrome_options = webdriver.ChromeOptions()
+        # chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+        # chrome_options.add_argument("--headless")
+        # chrome_options.add_argument("--disable-dev-shm-usage")
+        # chrome_options.add_argument("--no-sandbox")
+        # self.driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
 
 
         web_r = requests.get(ENUMS.URL_MAIN.value)
         web_soup = BeautifulSoup(web_r.text, 'lxml')
 
-        # self.driver = webdriver.Firefox()
+        self.driver = webdriver.Firefox()
         self.driver.get(ENUMS.URL_MAIN.value)
         self.html =  self.driver.execute_script("return document.documentElement.outerHTML")
         self.sel_soup = BeautifulSoup(self.html, 'lxml')
@@ -372,34 +372,15 @@ class LiveData():
 
         # self.clear_data()
         self.run_driver()
-        self.get_Id()
-        self.fill_coeff_data_list()
-        self.get_teams_list()
-        self.get_score()
-        self.get_time()
-        self.init_all_coef()
-        self.table_create()
-        self.fill_DB_data()
-        self.driver.close()
+        # self.get_Id()
+        # self.fill_coeff_data_list()
+        # self.get_teams_list()
+        # self.get_score()
+        # self.get_time()
+        # self.init_all_coef()
+        # self.table_create()
+        # self.fill_DB_data()
+        # self.driver.close()
 
 
-def  check_send_message():
-    live_data = LiveData()
-    betOdd = BetODD()
-    while True:
-        try:
-            live_data.main()
-            betOdd.create_line_table()
-            betOdd.select_by_waiting()
-            with open('mb.log', 'w'):
-                logging.basicConfig(filename="mb.log", level=logging.INFO)
-            time.sleep(30)
-        except Exception as ex:
-            print(ex)
 
-p1 = Process(target=check_send_message(),args=())
-p1.start()
-
-#
-# live_data = LiveData()
-# live_data.main()
