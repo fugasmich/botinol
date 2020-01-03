@@ -14,20 +14,21 @@ import test
 button_tasher ='Кэф просел'
 button_goals_summ = 'максимум забитых голов'
 
-
+print('BOT STARTED')
 def log_error(f):
     def inner(*args, **kwargs):
         try:
             return f(*args, **kwargs)
         except Exception as e:
             print(f'Error: {e}')
-            raise e
+            raise
     return inner
 
 
 
 def button_tasher_handler(update: Update, context: CallbackContext):
     test.create_line_table()
+    test.select_by_waiting()
     update.message.reply_text(
         text='здесь отобразятся команды с просевшими коэфициентами',
 
