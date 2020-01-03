@@ -21,10 +21,10 @@ from BetOddClass import BetODD
 
 
 class ENUMS(Enum):
-    DATABASE_NAME = 'd3m04puham5djm'
-    HOST = 'ec2-54-246-121-32.eu-west-1.compute.amazonaws.com'
-    USER = 'fqbolpemibntxw'
-    PASSWORD = 'e54c3f3415b05b130a26f9e8f59711e59bfe4d7373488bff92576ff3f4c728aa'
+    DATABASE_NAME = 'melbet'
+    HOST = 'localhost'
+    USER = 'dimsan'
+    PASSWORD = 'domi21092012nika'
     PORT = '5432'
     VS = "~vSv~ "
     URL_MAIN = "https://melbet.com/ru/live/football/"
