@@ -1,0 +1,14 @@
+[Unit]
+Description=Telegram Bot
+After=network.target
+
+[Service]
+User=dimsan
+Group=dimsan
+
+WorkingDirectory=/home/dimsan/botinol/
+Environment="PYTHONPATH=/home/dimsan/botinol/"
+ExecStart=/home/dimsan/botinol/.venv/bin/python /home/dimsan/botinol/botcompot.py
+
+[Install]
+WantedBy=multi-user.target
