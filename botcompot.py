@@ -62,7 +62,7 @@ def message_handler(update: Update, context: CallbackContext):
         return button_maxgoals_handler(update=update, context=context)
     reply_markup = ReplyKeyboardMarkup(
         keyboard=[
-            KeyboardButton(text=button_update)
+            KeyboardButton(text=button_update),
 
             [
                 KeyboardButton(text=button_tasher), KeyboardButton(text=button_goals_summ),

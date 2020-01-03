@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ff2a5d6-8c97-4c0a-9d19-a432698ec314" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/botcompot.py" beforeDir="false" afterPath="$PROJECT_DIR$/botcompot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/live_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/live_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,8 +46,8 @@
       <file leaf-file-name="live_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/live_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="134">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="e#39#48#0" expanded="true" />
               </folding>
@@ -75,8 +76,8 @@
       <file leaf-file-name="botcompot.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/botcompot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-96">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="816">
+              <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
               <folding>
                 <element signature="e#25#57#0" expanded="true" />
               </folding>
@@ -627,7 +628,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578084516032</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="livedata firefox driver change">
+      <created>1578084673691</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1578084673691</updated>
+    </task>
+    <task id="LOCAL-00041" summary="livedata bot_compot comment livedata class">
+      <created>1578084810320</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1578084810320</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -721,7 +736,9 @@
     <MESSAGE value="requirements uptodate" />
     <MESSAGE value="test db" />
     <MESSAGE value="livedata scrapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="livedata scrapping" />
+    <MESSAGE value="livedata firefox driver change" />
+    <MESSAGE value="livedata bot_compot comment livedata class" />
+    <option name="LAST_COMMIT_MESSAGE" value="livedata bot_compot comment livedata class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -933,8 +950,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/botcompot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="816">
+          <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
           <folding>
             <element signature="e#25#57#0" expanded="true" />
           </folding>
@@ -943,8 +960,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/live_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="134">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="e#39#48#0" expanded="true" />
           </folding>
