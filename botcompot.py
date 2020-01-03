@@ -13,7 +13,7 @@ import test
 
 button_tasher ='Кэф просел'
 button_goals_summ = 'максимум забитых голов'
-test.create_line_table()
+
 
 def log_error(f):
     def inner(*args, **kwargs):
@@ -27,6 +27,7 @@ def log_error(f):
 
 
 def button_tasher_handler(update: Update, context: CallbackContext):
+    test.create_line_table()
     update.message.reply_text(
         text='здесь отобразятся команды с просевшими коэфициентами',
 

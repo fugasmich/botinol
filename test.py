@@ -10,7 +10,7 @@ def open_connect():
     con = psycopg2.connect(database="melbet",
                            user="dimsan",
                            password="domi21092012nika",
-                           host="127.0.0.1",
+                           host="127.0.0.1/32",
                            port="5432")
     return con
 
