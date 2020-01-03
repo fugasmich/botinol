@@ -9,9 +9,11 @@ from telegram.ext import CallbackContext
 from telegram.ext import Filters
 from telegram.ext import MessageHandler
 from telegram.utils.request import Request
+import test
 
 button_tasher ='Кэф просел'
 button_goals_summ = 'максимум забитых голов'
+test.create_line_table()
 
 def log_error(f):
     def inner(*args, **kwargs):
