@@ -4,15 +4,18 @@
 from telegram import Update, Bot
 from telegram import KeyboardButton
 from telegram import ReplyKeyboardMarkup
+from telegram import ReplyKeyboardRemove
 from telegram.ext import Updater
 from telegram.ext import CallbackContext
 from telegram.ext import Filters
 from telegram.ext import MessageHandler
 from telegram.utils.request import Request
 
+from live_data import LiveData
 
 button_tasher ='Кэф просел'
 button_goals_summ = 'максимум забитых голов'
+button_update = 'обновить данные'
 
 print('BOT STARTED')
 def log_error(f):
@@ -24,6 +27,16 @@ def log_error(f):
             raise
     return inner
 
+
+def button_updatedata_handler(update: Update, context: CallbackContext):
+    live = LiveData()
+    live.main()
+    update.message.reply_text(
+
+        text='данные обновлены',
+        reply_markup=ReplyKeyboardRemove()
+
+    )
 
 
 def button_tasher_handler(update: Update, context: CallbackContext):
@@ -41,6 +54,8 @@ def button_maxgoals_handler(update: Update, context: CallbackContext):
 @log_error
 def message_handler(update: Update, context: CallbackContext):
     text = update.message.text
+    if text == button_update:
+        return button_updatedata_handler(update=update, context=context)
     if text == button_tasher:
        return button_tasher_handler(update=update, context=context)
     if text == button_goals_summ:
