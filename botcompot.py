@@ -29,8 +29,8 @@ def log_error(f):
 
 
 def button_updatedata_handler(update: Update, context: CallbackContext):
-    # live = LiveData()
-    # live.main()
+    live = LiveData()
+    live.main()
     update.message.reply_text(
 
         text='данные обновлены',
@@ -62,6 +62,8 @@ def message_handler(update: Update, context: CallbackContext):
         return button_maxgoals_handler(update=update, context=context)
     reply_markup = ReplyKeyboardMarkup(
         keyboard=[
+            KeyboardButton(text=button_update)
+
             [
                 KeyboardButton(text=button_tasher), KeyboardButton(text=button_goals_summ),
             ],
