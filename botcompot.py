@@ -9,7 +9,7 @@ from telegram.ext import CallbackContext
 from telegram.ext import Filters
 from telegram.ext import MessageHandler
 from telegram.utils.request import Request
-import test
+
 
 button_tasher ='Кэф просел'
 button_goals_summ = 'максимум забитых голов'
@@ -27,8 +27,7 @@ def log_error(f):
 
 
 def button_tasher_handler(update: Update, context: CallbackContext):
-    test.create_line_table()
-    test.select_by_waiting()
+
     update.message.reply_text(
         text='здесь отобразятся команды с просевшими коэфициентами',
 
