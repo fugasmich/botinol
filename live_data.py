@@ -93,15 +93,13 @@ class LiveData():
 
 
     def run_driver(self):
-        binary = FirefoxBinary(r'/usr/local/bin/firefox')
-        caps = DesiredCapabilities.FIREFOX.copy()
-        caps['marionette'] = True
-        # chrome_options = webdriver.ChromeOptions()
-        # chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
-        # chrome_options.add_argument("--headless")
-        # chrome_options.add_argument("--disable-dev-shm-usage")
-        # chrome_options.add_argument("--no-sandbox")
-        # self.driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
+
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.binary_location = os.environ.get("/usr/bin/goggle-chrome")
+        chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--no-sandbox")
+        self.driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
 
 
         web_r = requests.get(ENUMS.URL_MAIN.value)
@@ -110,7 +108,7 @@ class LiveData():
         # self.driver = webdriver.Firefox(firefox_binary=binary,
         #                        capabilities=caps,
         #                        executable_path=r'/usr/local/bin/geckodriver')
-        self.driver = webdriver.Firefox()
+        # self.driver = webdriver.Firefox()
         self.driver.get(ENUMS.URL_MAIN.value)
         self.html = self.driver.execute_script("return document.documentElement.outerHTML")
         self.sel_soup = BeautifulSoup(self.html, 'lxml')
