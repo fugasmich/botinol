@@ -11,9 +11,6 @@ from telegram.ext import Filters
 from telegram.ext import MessageHandler
 from telegram.utils.request import Request
 
-# from live_data import LiveData
-from live_data import LiveData
-from tst import LiveTST
 
 button_tasher ='Кэф просел'
 button_goals_summ = 'максимум забитых голов'
@@ -31,7 +28,7 @@ def log_error(f):
 
 
 def button_updatedata_handler(update: Update, context: CallbackContext):
-    
+
     update.message.reply_text(
         text='данные обновлены',
         reply_markup=ReplyKeyboardRemove()
