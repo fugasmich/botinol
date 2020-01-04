@@ -18,8 +18,6 @@ from enum import Enum
 from selenium import webdriver
 
 
-from selenium.webdriver import DesiredCapabilities
-from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
 
 class ENUMS(Enum):
@@ -27,7 +25,7 @@ class ENUMS(Enum):
     HOST = 'localhost'
     USER = 'dimsan'
     PASSWORD = 'domi21092012nika'
-    PORT = '5432'
+    PORT = '65535'
     VS = "~vSv~ "
     URL_MAIN = "https://melbet.com/ru/live/football/"
     URL_JsON = 'https://melbet.com/LiveFeed/Get1x2_VZip?sports=1&count=50&mode=4&cyberFlag=2&partner=8'
@@ -79,13 +77,13 @@ class LiveData():
         '''Connect to an existing database'''
         con = psycopg2.connect()
         try:
-            # con = psycopg2.connect(database=ENUMS.DATABASE_NAME.value,
-            #                        user=ENUMS.USER.value,
-            #                        password=ENUMS.PASSWORD.value,
-            #                        host=ENUMS.HOST.value,
-            #                        port=ENUMS.PORT.value)
+            con = psycopg2.connect(database=ENUMS.DATABASE_NAME.value,
+                                   user=ENUMS.USER.value,
+                                   password=ENUMS.PASSWORD.value,
+                                   host=ENUMS.HOST.value,
+                                   port=ENUMS.PORT.value)
 
-            con = psycopg2.connect('')
+
             logging.info('connection is is success')
         except ConnectionError as ex:
             logging.error(ex)
