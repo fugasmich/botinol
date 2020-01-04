@@ -202,3 +202,17 @@ class LiveTST():
         self.driver.close()
 
 
+def  check_send_message():
+    live_data = LiveTST()
+
+    while True:
+
+        try:
+            live_data.main()
+            time.sleep(30)
+            print('working...')
+        except:
+            print("бока")
+
+p1 = Process(target=check_send_message(),args=())
+p1.start()
