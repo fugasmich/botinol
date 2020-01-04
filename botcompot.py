@@ -31,8 +31,7 @@ def log_error(f):
 
 
 def button_updatedata_handler(update: Update, context: CallbackContext):
-    live = LiveTST()
-    live.main()
+    
     update.message.reply_text(
         text='данные обновлены',
         reply_markup=ReplyKeyboardRemove()
