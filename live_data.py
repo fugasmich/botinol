@@ -79,11 +79,13 @@ class LiveData():
         '''Connect to an existing database'''
         con = psycopg2.connect()
         try:
-            con = psycopg2.connect(database=ENUMS.DATABASE_NAME.value,
-                                   user=ENUMS.USER.value,
-                                   password=ENUMS.PASSWORD.value,
-                                   host=ENUMS.HOST.value,
-                                   port=ENUMS.PORT.value)
+            # con = psycopg2.connect(database=ENUMS.DATABASE_NAME.value,
+            #                        user=ENUMS.USER.value,
+            #                        password=ENUMS.PASSWORD.value,
+            #                        host=ENUMS.HOST.value,
+            #                        port=ENUMS.PORT.value)
+
+            con = psycopg2.connect('')
             logging.info('connection is is success')
         except ConnectionError as ex:
             logging.error(ex)

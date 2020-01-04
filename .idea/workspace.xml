@@ -46,8 +46,8 @@
       <file leaf-file-name="live_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/live_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="388" column="29" lean-forward="true" selection-start-line="386" selection-start-column="10" selection-end-line="388" selection-end-column="29" />
+            <state relative-caret-position="500">
+              <caret line="87" column="36" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
               <folding>
                 <element signature="e#39#48#0" expanded="true" />
               </folding>
@@ -359,20 +359,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577035636404</updated>
-    </task>
-    <task id="LOCAL-00005" summary="add db">
-      <created>1577680803148</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1577680803148</updated>
-    </task>
-    <task id="LOCAL-00006" summary="req update">
-      <created>1577693600455</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1577693600455</updated>
     </task>
     <task id="LOCAL-00007" summary="compot update">
       <created>1577693677980</created>
@@ -703,7 +689,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578137570496</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="comment">
+      <created>1578137874544</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1578137874544</updated>
+    </task>
+    <task id="LOCAL-00055" summary="commenta all database methods">
+      <created>1578138102752</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1578138102752</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -776,8 +776,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bot update rus translate" />
-    <MESSAGE value="live data Exception add" />
     <MESSAGE value="compot_update" />
     <MESSAGE value="update compot" />
     <MESSAGE value="some updates" />
@@ -801,11 +799,13 @@
     <MESSAGE value="add chromedriver" />
     <MESSAGE value="chromeoptions" />
     <MESSAGE value="service run" />
-    <option name="LAST_COMMIT_MESSAGE" value="service run" />
+    <MESSAGE value="comment" />
+    <MESSAGE value="commenta all database methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="commenta all database methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1015,8 +1015,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/live_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="388" column="29" lean-forward="true" selection-start-line="386" selection-start-column="10" selection-end-line="388" selection-end-column="29" />
+        <state relative-caret-position="500">
+          <caret line="87" column="36" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
           <folding>
             <element signature="e#39#48#0" expanded="true" />
           </folding>
