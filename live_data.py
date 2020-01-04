@@ -378,15 +378,15 @@ class LiveData():
 
         # self.clear_data()
         self.run_driver()
-        # self.get_Id()
-        # self.fill_coeff_data_list()
-        # self.get_teams_list()
-        # self.get_score()
-        # self.get_time()
-        # self.init_all_coef()
-        # self.table_create()
-        # self.fill_DB_data()
-        # self.driver.close()
+        self.get_Id()
+        self.fill_coeff_data_list()
+        self.get_teams_list()
+        self.get_score()
+        self.get_time()
+        self.init_all_coef()
+        self.table_create()
+        self.fill_DB_data()
+        self.driver.close()
 
 
 
