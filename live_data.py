@@ -107,11 +107,12 @@ class LiveData():
         web_r = requests.get(ENUMS.URL_MAIN.value)
         web_soup = BeautifulSoup(web_r.text, 'lxml')
 
-        self.driver = webdriver.Firefox(firefox_binary=binary,
-                               capabilities=caps,
-                               executable_path=r'/usr/local/bin/geckodriver')
+        # self.driver = webdriver.Firefox(firefox_binary=binary,
+        #                        capabilities=caps,
+        #                        executable_path=r'/usr/local/bin/geckodriver')
+        self.driver = webdriver.Firefox()
         self.driver.get(ENUMS.URL_MAIN.value)
-        self.html =  self.driver.execute_script("return document.documentElement.outerHTML")
+        self.html = self.driver.execute_script("return document.documentElement.outerHTML")
         self.sel_soup = BeautifulSoup(self.html, 'lxml')
 
 
