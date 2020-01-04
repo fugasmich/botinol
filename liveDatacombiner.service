@@ -1,5 +1,5 @@
 [Unit]
-Description=Telegram Bot
+Description=scrapper
 After=network.target
 
 [Service]

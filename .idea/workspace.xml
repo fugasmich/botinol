@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ff2a5d6-8c97-4c0a-9d19-a432698ec314" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/tst.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botcompot.py" beforeDir="false" afterPath="$PROJECT_DIR$/botcompot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liveDatacombiner.service" beforeDir="false" afterPath="$PROJECT_DIR$/liveDatacombiner.service" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tst.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tst.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tst.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
+            <state relative-caret-position="-1660">
               <caret line="64" column="42" lean-forward="true" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -94,6 +93,15 @@
               <folding>
                 <element signature="e#25#57#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="liveDatacombiner.service" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/liveDatacombiner.service">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -178,6 +186,7 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/botcompot.py" />
         <option value="$PROJECT_DIR$/tst.py" />
+        <option value="$PROJECT_DIR$/liveDatacombiner.service" />
       </list>
     </option>
   </component>
@@ -225,17 +234,18 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pyEducation\botinol" />
+      <recent name="D:\pyEducation\melBEt\venv" />
+      <recent name="D:\pyEducation\melBEt" />
+      <recent name="D:\pyEducation\melBEt\venv\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\pyEducation\botinol\requirements" />
       <recent name="D:\pyEducation\botinol\venv\lib" />
       <recent name="D:\pyEducation\melBEt" />
       <recent name="D:\pyEducation\melBEt\venv\lib" />
       <recent name="D:\pyEducation\melBEt\venv" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\pyEducation\melBEt\venv" />
-      <recent name="D:\pyEducation\melBEt" />
-      <recent name="D:\pyEducation\melBEt\venv\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -373,20 +383,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577035636404</updated>
-    </task>
-    <task id="LOCAL-00009" summary="add live_data">
-      <created>1577741259994</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1577741259995</updated>
-    </task>
-    <task id="LOCAL-00010" summary="add live_data">
-      <created>1577741666153</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1577741666153</updated>
     </task>
     <task id="LOCAL-00011" summary="req remove win32">
       <created>1577742179571</created>
@@ -717,7 +713,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578144045352</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="testing">
+      <created>1578152272289</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1578152272290</updated>
+    </task>
+    <task id="LOCAL-00059" summary="livedatacombiner">
+      <created>1578153471346</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1578153471346</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -790,8 +800,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="some updates" />
-    <MESSAGE value="update unicode" />
     <MESSAGE value="edit proc" />
     <MESSAGE value="edit req" />
     <MESSAGE value="edit path gecko" />
@@ -815,7 +823,9 @@
     <MESSAGE value="commenta all database methods" />
     <MESSAGE value="change connection" />
     <MESSAGE value="port changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="port changed" />
+    <MESSAGE value="testing" />
+    <MESSAGE value="livedatacombiner" />
+    <option name="LAST_COMMIT_MESSAGE" value="livedatacombiner" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -823,7 +833,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db_operate.py" />
     <entry file="file://$PROJECT_DIR$/Match.py" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/608549d3-568c-433f-bb77-773fbbbda405/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1022,16 +1031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/botcompot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding>
-            <element signature="e#25#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/live_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -1044,11 +1043,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tst.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
+        <state relative-caret-position="-1660">
           <caret line="64" column="42" lean-forward="true" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/botcompot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding>
+            <element signature="e#25#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liveDatacombiner.service">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
         </state>
       </provider>
     </entry>
