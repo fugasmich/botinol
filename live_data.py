@@ -390,3 +390,17 @@ class LiveData():
 
 
 
+def  check_send_message():
+    live_data = LiveData()
+
+    while True:
+
+        try:
+            live_data.main()
+            time.sleep(30)
+            print('working...')
+        except Exception as e:
+            print("бока", e)
+
+p1 = Process(target=check_send_message(),args=())
+p1.start()
