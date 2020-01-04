@@ -17,7 +17,9 @@ from bs4 import BeautifulSoup
 from enum import Enum
 from selenium import webdriver
 
-# from BetOddClass import BetODD
+
+from selenium.webdriver import DesiredCapabilities
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
 
 class ENUMS(Enum):
@@ -88,9 +90,12 @@ class LiveData():
         return con
 
 
+
+
     def run_driver(self):
-
-
+        binary = FirefoxBinary(r'/usr/local/bin/firefox')
+        caps = DesiredCapabilities.FIREFOX.copy()
+        caps['marionette'] = True
         # chrome_options = webdriver.ChromeOptions()
         # chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
         # chrome_options.add_argument("--headless")
@@ -102,7 +107,9 @@ class LiveData():
         web_r = requests.get(ENUMS.URL_MAIN.value)
         web_soup = BeautifulSoup(web_r.text, 'lxml')
 
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.Firefox(firefox_binary=binary,
+                               capabilities=caps,
+                               executable_path=r'/usr/local/bin/geckodriver')
         self.driver.get(ENUMS.URL_MAIN.value)
         self.html =  self.driver.execute_script("return document.documentElement.outerHTML")
         self.sel_soup = BeautifulSoup(self.html, 'lxml')
