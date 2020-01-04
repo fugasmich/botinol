@@ -384,9 +384,9 @@ class LiveData():
         self.get_score()
         self.get_time()
         self.init_all_coef()
-        self.table_create()
-        self.fill_DB_data()
-        self.driver.close()
+        # self.table_create()
+        # self.fill_DB_data()
+        # self.driver.close()
 
 
 

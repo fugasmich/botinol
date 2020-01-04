@@ -46,8 +46,8 @@
       <file leaf-file-name="live_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/live_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="101" column="45" selection-start-line="101" selection-start-column="45" selection-end-line="101" selection-end-column="45" />
+            <state relative-caret-position="528">
+              <caret line="388" column="29" lean-forward="true" selection-start-line="386" selection-start-column="10" selection-end-line="388" selection-end-column="29" />
               <folding>
                 <element signature="e#39#48#0" expanded="true" />
               </folding>
@@ -87,7 +87,11 @@
       </file>
       <file leaf-file-name="tgbot.service" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tgbot.service">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
@@ -158,6 +162,7 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/botcompot.py" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/tgbot.service" />
         <option value="$PROJECT_DIR$/live_data.py" />
       </list>
     </option>
@@ -354,20 +359,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577035636404</updated>
-    </task>
-    <task id="LOCAL-00003" summary="compot update">
-      <created>1577654079272</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1577654079272</updated>
-    </task>
-    <task id="LOCAL-00004" summary="compot update">
-      <created>1577654200963</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1577654200963</updated>
     </task>
     <task id="LOCAL-00005" summary="add db">
       <created>1577680803148</created>
@@ -698,7 +689,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578136235756</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="chromeoptions">
+      <created>1578136893496</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1578136893496</updated>
+    </task>
+    <task id="LOCAL-00053" summary="service run">
+      <created>1578137570495</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1578137570496</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -711,7 +716,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1448" y="57" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
@@ -721,9 +726,9 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32897604" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" weight="0.32897604" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17217484" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23137535" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.15245202" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.20487106" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
@@ -771,8 +776,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add live_data" />
-    <MESSAGE value="req remove win32" />
     <MESSAGE value="bot update rus translate" />
     <MESSAGE value="live data Exception add" />
     <MESSAGE value="compot_update" />
@@ -796,7 +799,9 @@
     <MESSAGE value="add geckopath" />
     <MESSAGE value="add gecko" />
     <MESSAGE value="add chromedriver" />
-    <option name="LAST_COMMIT_MESSAGE" value="add chromedriver" />
+    <MESSAGE value="chromeoptions" />
+    <MESSAGE value="service run" />
+    <option name="LAST_COMMIT_MESSAGE" value="service run" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -964,9 +969,6 @@
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tgbot.service">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="das://4ede30a2-56d4-41a2-8cdf-8f4efe85591e/database/d3m04puham5djm/schema/public/table/live_games">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1004,10 +1006,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tgbot.service">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/live_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="101" column="45" selection-start-line="101" selection-start-column="45" selection-end-line="101" selection-end-column="45" />
+        <state relative-caret-position="528">
+          <caret line="388" column="29" lean-forward="true" selection-start-line="386" selection-start-column="10" selection-end-line="388" selection-end-column="29" />
           <folding>
             <element signature="e#39#48#0" expanded="true" />
           </folding>
