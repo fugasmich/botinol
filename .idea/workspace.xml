@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1ff2a5d6-8c97-4c0a-9d19-a432698ec314" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botcompot.py" beforeDir="false" afterPath="$PROJECT_DIR$/botcompot.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,8 +78,8 @@
       <file leaf-file-name="botcompot.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/botcompot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+            <state relative-caret-position="192">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#25#57#0" expanded="true" />
               </folding>
@@ -374,20 +373,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577035636404</updated>
-    </task>
-    <task id="LOCAL-00013" summary="live data Exception add">
-      <created>1577772723603</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1577772723603</updated>
-    </task>
-    <task id="LOCAL-00014" summary="bot update rus translate">
-      <created>1577831146046</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1577831146046</updated>
     </task>
     <task id="LOCAL-00015" summary="live data Exception add">
       <created>1577832018220</created>
@@ -718,7 +703,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578154119338</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="bot upd">
+      <created>1578154704995</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1578154704995</updated>
+    </task>
+    <task id="LOCAL-00063" summary="bot upd">
+      <created>1578154908938</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1578154908938</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -732,7 +731,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1448" y="57" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50053304" side_tool="true" weight="0.46514162" />
@@ -791,7 +789,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edit proc" />
     <MESSAGE value="edit req" />
     <MESSAGE value="edit path gecko" />
     <MESSAGE value="req update" />
@@ -816,7 +813,8 @@
     <MESSAGE value="port changed" />
     <MESSAGE value="testing" />
     <MESSAGE value="livedatacombiner" />
-    <option name="LAST_COMMIT_MESSAGE" value="livedatacombiner" />
+    <MESSAGE value="bot upd" />
+    <option name="LAST_COMMIT_MESSAGE" value="bot upd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1051,8 +1049,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/botcompot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        <state relative-caret-position="192">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#25#57#0" expanded="true" />
           </folding>

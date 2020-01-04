@@ -247,98 +247,98 @@ class LiveData():
             # print( list_js['Value'][t]['O1'] + ' vs ' + list_js['Value'][t]['O2'])
             print(self.teams[0])
     # create database
-    # def table_create(self):
-    #     # con = psycopg2.connect(
-    #     #     database="postgres",
-    #     #     user="dimsan",
-    #     #     password="domi21092012nika",
-    #     #     host="127.0.0.1",
-    #     #     port="5432"
-    #     # )
-    #     con = self.open_connect()
-    #     cur = con.cursor()
-    #     cur.execute('''CREATE TABLE  if not exists live_games
-    #      (ID VARCHAR,
-    #      TEAMS VARCHAR,
-    #      SCORE VARCHAR,
-    #      TIMER VARCHAR,
-    #      WF_COEF VARCHAR,
-    #      DRW_COEF VARCHAR,
-    #      WSEC_COEF VARCHAR,
-    #      WF_DCHANCE_COEF VARCHAR ,
-    #      DRW_DCHANCE_COEF VARCHAR,
-    #      WSEC_DCHANCE_COEF VARCHAR,
-    #      HANDICF_LOW VARCHAR,
-    #      HANDICS_HIGH VARCHAR,
-    #      T_HIGH VARCHAR,
-    #      T_LOW VARCHAR
-    #
-    #     )''')
-    #
-    #     print("таблица live_games создана")
-    #     con.commit()
-    #     con.close()
+    def table_create(self):
+        # con = psycopg2.connect(
+        #     database="postgres",
+        #     user="dimsan",
+        #     password="domi21092012nika",
+        #     host="127.0.0.1",
+        #     port="5432"
+        # )
+        con = self.open_connect()
+        cur = con.cursor()
+        cur.execute('''CREATE TABLE  if not exists live_games
+         (ID VARCHAR,
+         TEAMS VARCHAR,
+         SCORE VARCHAR,
+         TIMER VARCHAR,
+         WF_COEF VARCHAR,
+         DRW_COEF VARCHAR,
+         WSEC_COEF VARCHAR,
+         WF_DCHANCE_COEF VARCHAR ,
+         DRW_DCHANCE_COEF VARCHAR,
+         WSEC_DCHANCE_COEF VARCHAR,
+         HANDICF_LOW VARCHAR,
+         HANDICS_HIGH VARCHAR,
+         T_HIGH VARCHAR,
+         T_LOW VARCHAR
+
+        )''')
+
+        print("таблица live_games создана")
+        con.commit()
+        con.close()
 
     # fill data base
-    # def fill_DB_data(self):
-    #     """ insert a new vendor into the vendors table """
-    #     clear = '''DELETE FROM live_games'''
-    #     sql = """INSERT INTO live_games(id, teams, score, timer, wf_coef, drw_coef,
-    #             wsec_coef, wf_dchance_coef, drw_dchance_coef, wsec_dchance_coef, handicf_low, handics_high, t_high,t_low)
-    #              VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);"""
-    #     conn = None
-    #
-    #         # try:
-    #         # read database configuration
-    #
-    #     # connect to the PostgreSQL database
-    #     # conn = psycopg2.connect(database="postgres",
-    #     #                         user="dimsan",
-    #     #                         password="domi21092012nika",
-    #     #                         host="127.0.0.1",
-    #     #                         port="5432")
-    #     conn = self.open_connect()
-    #     # create a new cursor
-    #     cur = conn.cursor()
-    #     cur.execute(clear)
-    #     # print(len(self.id_live))
-    #     # print(len(self.teams))
-    #     # print(len(self.score))
-    #     # print(len(self.times))
-    #     # execute the INSERT statement
-    #     for i in range(0, len(self.id_live)):
-    #         cur.execute(sql, (self.id_live[i], self.teams[i], self.score[i], self.times[i],
-    #                           self.coeff_w_first[i], self.coeff_draw[i], self.coeff_w_second[i],
-    #                           self.coeff_dcw_first[i], self.coeff_dc_draw[i], self.coeff_dcw_second[i],
-    #                           self.coeff_han_f_l[i], self.coeff_han_s_H[i],
-    #                           self.coeff_tH[i], self.coeff_tL[i]))
-    #
-    #     self.id_live.clear()
-    #     self.score.clear()
-    #     self.times.clear()
-    #     self.teams.clear()
-    #     self.coeffficients.clear()
-    #     self.coeff_w_first.clear()
-    #     self.coeff_draw.clear()
-    #     self.coeff_w_second.clear()
-    #     self.coeff_dcw_first.clear()
-    #     self.coeff_dc_draw.clear()
-    #     self.coeff_dcw_second.clear()
-    #     self.coeff_han_f_l.clear()
-    #     self.coeff_han_s_H.clear()
-    #     self.coeff_tH.clear()
-    #     self.coeff_tL.clear()
-    #     # commit the changes to the database
-    #     conn.commit()
-    #     # close communication with the database
-    #     cur.close()
-    #     print('таблица live_games Заполнена данными')
-    #     # except (Exception, psycopg2.DatabaseError) as error:
-    #     #     print('ошибка при добавлени данных в таблицу live-games')
-    #     #     print(error)
-    #     # finally:
-    #     if conn is not None:
-    #         conn.close()
+    def fill_DB_data(self):
+        """ insert a new vendor into the vendors table """
+        clear = '''DELETE FROM live_games'''
+        sql = """INSERT INTO live_games(id, teams, score, timer, wf_coef, drw_coef,
+                wsec_coef, wf_dchance_coef, drw_dchance_coef, wsec_dchance_coef, handicf_low, handics_high, t_high,t_low)
+                 VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);"""
+        conn = None
+
+            # try:
+            # read database configuration
+
+        # connect to the PostgreSQL database
+        # conn = psycopg2.connect(database="postgres",
+        #                         user="dimsan",
+        #                         password="domi21092012nika",
+        #                         host="127.0.0.1",
+        #                         port="5432")
+        conn = self.open_connect()
+        # create a new cursor
+        cur = conn.cursor()
+        cur.execute(clear)
+        # print(len(self.id_live))
+        # print(len(self.teams))
+        # print(len(self.score))
+        # print(len(self.times))
+        # execute the INSERT statement
+        for i in range(0, len(self.id_live)):
+            cur.execute(sql, (self.id_live[i], self.teams[i], self.score[i], self.times[i],
+                              self.coeff_w_first[i], self.coeff_draw[i], self.coeff_w_second[i],
+                              self.coeff_dcw_first[i], self.coeff_dc_draw[i], self.coeff_dcw_second[i],
+                              self.coeff_han_f_l[i], self.coeff_han_s_H[i],
+                              self.coeff_tH[i], self.coeff_tL[i]))
+
+        self.id_live.clear()
+        self.score.clear()
+        self.times.clear()
+        self.teams.clear()
+        self.coeffficients.clear()
+        self.coeff_w_first.clear()
+        self.coeff_draw.clear()
+        self.coeff_w_second.clear()
+        self.coeff_dcw_first.clear()
+        self.coeff_dc_draw.clear()
+        self.coeff_dcw_second.clear()
+        self.coeff_han_f_l.clear()
+        self.coeff_han_s_H.clear()
+        self.coeff_tH.clear()
+        self.coeff_tL.clear()
+        # commit the changes to the database
+        conn.commit()
+        # close communication with the database
+        cur.close()
+        print('таблица live_games Заполнена данными')
+        # except (Exception, psycopg2.DatabaseError) as error:
+        #     print('ошибка при добавлени данных в таблицу live-games')
+        #     print(error)
+        # finally:
+        if conn is not None:
+            conn.close()
 
     #
     # def clear_data(self):
@@ -384,8 +384,8 @@ class LiveData():
         self.get_score()
         self.get_time()
         self.init_all_coef()
-        # self.table_create()
-        # self.fill_DB_data()
+        self.table_create()
+        self.fill_DB_data()
         # self.driver.close()
 
 
