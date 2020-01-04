@@ -22,10 +22,10 @@ from selenium import webdriver
 
 class ENUMS(Enum):
     DATABASE_NAME = 'melbet'
-    HOST = 'localhost'
-    USER = 'dimsan'
+    HOST = '192.168.31.160'
+    USER = 'postgres'
     PASSWORD = 'domi21092012nika'
-    PORT = '65535'
+    PORT = '5432'
     VS = "~vSv~ "
     URL_MAIN = "https://melbet.com/ru/live/football/"
     URL_JsON = 'https://melbet.com/LiveFeed/Get1x2_VZip?sports=1&count=50&mode=4&cyberFlag=2&partner=8'
