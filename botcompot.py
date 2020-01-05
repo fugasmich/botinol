@@ -11,12 +11,14 @@ from telegram.ext import Filters
 from telegram.ext import MessageHandler
 from telegram.utils.request import Request
 
+from BetOddClass import BetODD
 
 button_tasher ='Кэф просел'
 button_goals_summ = 'максимум забитых голов'
 button_update = 'обновить данные'
 
 print('BOT STARTED')
+betOdd = BetODD()
 def log_error(f):
     def inner(*args, **kwargs):
         try:
@@ -28,7 +30,7 @@ def log_error(f):
 
 
 def button_updatedata_handler(update: Update, context: CallbackContext):
-
+    betOdd.init_betodds()
     update.message.reply_text(
         text='данные обновлены',
         reply_markup=ReplyKeyboardRemove()
@@ -37,12 +39,10 @@ def button_updatedata_handler(update: Update, context: CallbackContext):
 
 
 def button_tasher_handler(update: Update, context: CallbackContext):
-
-    update.message.reply_text(
-        text='здесь отобразятся команды с просевшими коэфициентами',
-
-
-    )
+    for i in betOdd.t:
+        update.message.reply_text(
+            text=i,
+        )
 def button_maxgoals_handler(update: Update, context: CallbackContext):
     update.message.reply_text(
         text='здесь отобразятся игры с максимальным количеством забитых голов',

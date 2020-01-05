@@ -8,18 +8,23 @@ import psycopg2
 
 
 # itistime_list = []
+from live_data import ENUMS
+
 
 class BetODD():
     t = []
 
     def open_connect(self):
         '''Connect to an existing database'''
+        print('connection start')
+        con = psycopg2.connect(database=ENUMS.DATABASE_NAME.value,
+                               user=ENUMS.USER.value,
+                               password=ENUMS.PASSWORD.value,
+                               host=ENUMS.HOST.value,
+                               port=ENUMS.PORT.value)
 
-        con = psycopg2.connect(database="postgres",
-                               user="dimsan",
-                               password="domi21092012nika",
-                               host="127.0.0.1",
-                               port="5432")
+        print('suCCESSSS')
+
         return con
 
     def select_by_waiting(self):
@@ -145,7 +150,7 @@ class BetODD():
                                  float(r[10])) + " " + '%')
 
                 else:
-                    # self.t.append('следим за матчем: ' + r[1])
+                    self.t.append('следим за матчем: ' + r[1])
                     continue
         con.commit()
         con.close()
@@ -250,7 +255,6 @@ class BetODD():
         self.check_score_null()
         self.check_for_changes()
         self.get_data_by_time()
-
         self.clear_table_line()
 
 

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ff2a5d6-8c97-4c0a-9d19-a432698ec314" name="Default" comment="">
+    <list default="true" id="1ff2a5d6-8c97-4c0a-9d19-a432698ec314" name="Default" comment="edit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BetOddClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/BetOddClass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botcompot.py" beforeDir="false" afterPath="$PROJECT_DIR$/botcompot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/live_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/live_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/live_data_scrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/live_data_scrapper.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,6 +24,7 @@
     <SUITE FILE_PATH="coverage/melBEt$betOn.coverage" NAME="betOn Coverage Results" MODIFIED="1577388858962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/melBEt$live_data_scrapper.coverage" NAME="live_data_scrapper Coverage Results" MODIFIED="1577389176098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/melBEt$Bot_compot__1_.coverage" NAME="Bot_compot (1) Coverage Results" MODIFIED="1577540122018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/botinol$live_data_scrapper.coverage" NAME="live_data_scrapper Coverage Results" MODIFIED="1578250646019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/melBEt$BetOddClass.coverage" NAME="BetOddClass Coverage Results" MODIFIED="1577519090867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/lib" />
     <SUITE FILE_PATH="coverage/botinol$live_data.coverage" NAME="live_data Coverage Results" MODIFIED="1577741117875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/lib" />
     <SUITE FILE_PATH="coverage/melBEt$Bot_compot.coverage" NAME="Bot_compot Coverage Results" MODIFIED="1577516629003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -43,11 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="live_data.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="live_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/live_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="280" column="27" lean-forward="true" selection-start-line="280" selection-start-column="27" selection-end-line="280" selection-end-column="27" />
+            <state relative-caret-position="224">
+              <caret line="349" column="12" lean-forward="true" selection-start-line="349" selection-start-column="12" selection-end-line="349" selection-end-column="12" />
               <folding>
                 <element signature="e#39#48#0" expanded="true" />
               </folding>
@@ -68,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/botcompot.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="64">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="e#25#57#0" expanded="true" />
               </folding>
@@ -108,14 +112,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BetOddClass.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BetOddClass.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BetOddClass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+            <state relative-caret-position="956">
+              <caret line="152" column="62" lean-forward="true" selection-start-line="152" selection-start-column="62" selection-end-line="152" selection-end-column="62" />
               <folding>
                 <element signature="e#39#54#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="live_data_scrapper.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/live_data_scrapper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="316" column="17" selection-start-line="316" selection-start-column="17" selection-end-line="316" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -150,8 +163,6 @@
         <option value="$PROJECT_DIR$/venv/Bot_compot.py" />
         <option value="$PROJECT_DIR$/venv/lib/live_data.py" />
         <option value="$PROJECT_DIR$/line_bets.py" />
-        <option value="$PROJECT_DIR$/live_data_scrapper.py" />
-        <option value="$PROJECT_DIR$/BetOddClass.py" />
         <option value="$PROJECT_DIR$/Bot_compot.py" />
         <option value="$PROJECT_DIR$/ыскфз.py" />
         <option value="$PROJECT_DIR$/scrppy.py" />
@@ -164,8 +175,10 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/liveDatacombiner.service" />
         <option value="$PROJECT_DIR$/tst.py" />
-        <option value="$PROJECT_DIR$/botcompot.py" />
+        <option value="$PROJECT_DIR$/live_data_scrapper.py" />
         <option value="$PROJECT_DIR$/live_data.py" />
+        <option value="$PROJECT_DIR$/botcompot.py" />
+        <option value="$PROJECT_DIR$/BetOddClass.py" />
       </list>
     </option>
   </component>
@@ -239,26 +252,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.botcompot">
-    <configuration name="Bot_compot (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="melBEt" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\pyEducation\melBEt\Bot_compot.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.live_data_scrapper">
     <configuration name="botcompot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="melBEt" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -292,6 +286,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="D:\pyEducation\melBEt\live_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="live_data_scrapper" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="melBEt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/live_data_scrapper.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -336,19 +349,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.Bot_compot (1)" />
       <item itemvalue="Python.live_data" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.ssss" />
       <item itemvalue="Python.botcompot" />
+      <item itemvalue="Python.live_data_scrapper" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.live_data_scrapper" />
         <item itemvalue="Python.botcompot" />
         <item itemvalue="Python.ssss" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.live_data" />
-        <item itemvalue="Python.Bot_compot (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -362,20 +375,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577035636404</updated>
-    </task>
-    <task id="LOCAL-00024" summary="edit path gecko">
-      <created>1577866190895</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1577866190895</updated>
-    </task>
-    <task id="LOCAL-00025" summary="edit path gecko">
-      <created>1577872470303</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1577872470303</updated>
     </task>
     <task id="LOCAL-00026" summary="req update">
       <created>1577874498633</created>
@@ -706,7 +705,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578245220544</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="connection method edit">
+      <created>1578250413644</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1578250413644</updated>
+    </task>
+    <task id="LOCAL-00074" summary="edit">
+      <created>1578251451572</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1578251451572</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -725,11 +738,11 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50053304" side_tool="true" weight="0.46514162" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.4640523" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.4640523" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32897604" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" weight="0.32897604" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18283582" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18283582" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" visible="true" weight="0.15245202" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -779,8 +792,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="global changes" />
-    <MESSAGE value="global changes_1" />
     <MESSAGE value="requirements uptodate" />
     <MESSAGE value="test db" />
     <MESSAGE value="livedata scrapping" />
@@ -804,7 +815,9 @@
     <MESSAGE value="dataabase confugure" />
     <MESSAGE value="localhost" />
     <MESSAGE value="connection info" />
-    <option name="LAST_COMMIT_MESSAGE" value="connection info" />
+    <MESSAGE value="connection method edit" />
+    <MESSAGE value="edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -935,13 +948,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/27d68db4-cf81-41a1-a881-78a48be1ab34/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/live_data_scrapper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3216">
-          <caret line="214" column="16" selection-start-line="214" selection-start-column="16" selection-end-line="214" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4ede30a2-56d4-41a2-8cdf-8f4efe85591e/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -962,13 +968,6 @@
     <entry file="file://$PROJECT_DIR$/ssss.py" />
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://4ede30a2-56d4-41a2-8cdf-8f4efe85591e/database/d3m04puham5djm/schema/public/table/live_games">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mb.log" />
     <entry file="file://$PROJECT_DIR$/geckodriver.log" />
@@ -994,16 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/botcompot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#25#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tst.py" />
     <entry file="file://$PROJECT_DIR$/liveDatacombiner.service">
       <provider selected="true" editor-type-id="text-editor">
@@ -1012,22 +1001,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BetOddClass.py">
+    <entry file="das://4ede30a2-56d4-41a2-8cdf-8f4efe85591e/database/d3m04puham5djm/schema/public/table/live_games">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live_data_scrapper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-          <folding>
-            <element signature="e#39#54#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="412">
+          <caret line="316" column="17" selection-start-line="316" selection-start-column="17" selection-end-line="316" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/live_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="280" column="27" lean-forward="true" selection-start-line="280" selection-start-column="27" selection-end-line="280" selection-end-column="27" />
+        <state relative-caret-position="224">
+          <caret line="349" column="12" lean-forward="true" selection-start-line="349" selection-start-column="12" selection-end-line="349" selection-end-column="12" />
           <folding>
             <element signature="e#39#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/botcompot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#25#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BetOddClass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="956">
+          <caret line="152" column="62" lean-forward="true" selection-start-line="152" selection-start-column="62" selection-end-line="152" selection-end-column="62" />
+          <folding>
+            <element signature="e#39#54#0" expanded="true" />
           </folding>
         </state>
       </provider>

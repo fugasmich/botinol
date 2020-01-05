@@ -280,20 +280,11 @@ class LiveData():
                  VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);"""
         conn = None
 
-            # try:
-            # read database configuration
-
-        # connect to the PostgreSQL database
-        # conn = psycopg2.connect(database="postgres",
-        #                         user="dimsan",
-        #                         password="domi21092012nika",
-        #                         host="127.0.0.1",
-        #                         port="5432")
         conn = self.open_connect()
         # create a new cursor
         cur = conn.cursor()
         cur.execute(clear)
-       
+
         # execute the INSERT statement
         for i in range(0, len(self.teams)):
             cur.execute(sql, (self.id_live[i], self.teams[i], self.score[i], self.times[i],
@@ -329,39 +320,6 @@ class LiveData():
         if conn is not None:
             conn.close()
 
-    #
-    # def clear_data(self):
-    #     clear = '''DELETE FROM live_games'''
-    #
-    #     conn = psycopg2.connect(database="postgres",
-    #                         user="dimsan",
-    #                         password="domi21092012nika",
-    #                         host="127.0.0.1",
-    #                         port="5432")
-    #     # create a new cursor
-    #     cur = conn.cursor()
-    #
-    #     cur.execute(clear)
-    #     conn.commit()
-    #     conn.close()
-
-
-    # def clear_dublicate_live(self):
-    #     '''remove all dublicates from line_table'''
-    #     sql = """DELETE FROM live_games WHERE ctid NOT IN
-    # (SELECT max(ctid) FROM live_games GROUP BY live_games.*);"""
-    #     # con = psycopg2.connect(
-    #     #     database="postgres",
-    #     #     user="dimsan",
-    #     #     password="domi21092012nika",
-    #     #     host="127.0.0.1",
-    #     #     port="5432"
-    #     # )
-    #     con = self.open_connect()
-    #     cur = con.cursor()
-    #     cur.execute(sql)
-    #     con.commit()
-    #     con.close()
 
         # read json to get leagues with teams
     def get_teams_list(self):
@@ -388,15 +346,13 @@ class LiveData():
 
 def  check_send_message():
     live_data = LiveData()
-
     while True:
-
         try:
             live_data.main()
             time.sleep(30)
             print('working...')
         except Exception as e:
-            print("бока", e)
+            check_send_message()
 
 p1 = Process(target=check_send_message(),args=())
 p1.start()
