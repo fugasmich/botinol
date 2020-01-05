@@ -235,14 +235,8 @@ class LiveData():
             print('коэффициенты не распределены')
 
 
-    # read json to get leagues with teams
-    def get_teams_list(self):
-        req = requests.get(ENUMS.URL_JsON.value)
-        list_js = req.json()
-        for t in range(0, len(list_js['Value'])):
-            self.teams.append(list_js['Value'][t]['L'] + ':' + " " + list_js['Value'][t]['O1'] + ' vs ' + list_js['Value'][t]['O2'])
-            # print( list_js['Value'][t]['O1'] + ' vs ' + list_js['Value'][t]['O2'])
-            print(self.teams[0])
+
+
     # create database
     def table_create(self):
 
@@ -299,12 +293,9 @@ class LiveData():
         # create a new cursor
         cur = conn.cursor()
         cur.execute(clear)
-        # print(len(self.id_live))
-        # print(len(self.teams))
-        # print(len(self.score))
-        # print(len(self.times))
+       
         # execute the INSERT statement
-        for i in range(0, len(self.id_live)):
+        for i in range(0, len(self.teams)):
             cur.execute(sql, (self.id_live[i], self.teams[i], self.score[i], self.times[i],
                               self.coeff_w_first[i], self.coeff_draw[i], self.coeff_w_second[i],
                               self.coeff_dcw_first[i], self.coeff_dc_draw[i], self.coeff_dcw_second[i],
@@ -372,6 +363,13 @@ class LiveData():
     #     con.commit()
     #     con.close()
 
+        # read json to get leagues with teams
+    def get_teams_list(self):
+        req = requests.get(ENUMS.URL_JsON.value)
+        list_js = req.json()
+        for t in range(0, len(list_js['Value'])):
+                self.teams.append(list_js['Value'][t]['L'] + ':' + " " + list_js['Value'][t]['O1'] + ' vs ' + list_js['Value'][t]['O2'])
+
     def main(self):
 
         # self.clear_data()
@@ -384,7 +382,7 @@ class LiveData():
         self.init_all_coef()
         self.table_create()
         self.fill_DB_data()
-        # self.driver.close()
+        self.driver.close()
 
 
 
