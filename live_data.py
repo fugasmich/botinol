@@ -86,7 +86,7 @@ class LiveData():
 
             logging.info('connection is is success')
         except ConnectionError as ex:
-            logging.error(ex)
+            print(ex, 'ОШИБКА')
         return con
 
 
@@ -257,26 +257,30 @@ class LiveData():
         # )
         con = self.open_connect()
         cur = con.cursor()
-        cur.execute('''CREATE TABLE  if not exists live_games
-         (ID VARCHAR,
-         TEAMS VARCHAR,
-         SCORE VARCHAR,
-         TIMER VARCHAR,
-         WF_COEF VARCHAR,
-         DRW_COEF VARCHAR,
-         WSEC_COEF VARCHAR,
-         WF_DCHANCE_COEF VARCHAR ,
-         DRW_DCHANCE_COEF VARCHAR,
-         WSEC_DCHANCE_COEF VARCHAR,
-         HANDICF_LOW VARCHAR,
-         HANDICS_HIGH VARCHAR,
-         T_HIGH VARCHAR,
-         T_LOW VARCHAR
 
-        )''')
+        try:
+            cur.execute('''CREATE TABLE  if not exists live_games
+             (ID VARCHAR,
+             TEAMS VARCHAR,
+             SCORE VARCHAR,
+             TIMER VARCHAR,
+             WF_COEF VARCHAR,
+             DRW_COEF VARCHAR,
+             WSEC_COEF VARCHAR,
+             WF_DCHANCE_COEF VARCHAR ,
+             DRW_DCHANCE_COEF VARCHAR,
+             WSEC_DCHANCE_COEF VARCHAR,
+             HANDICF_LOW VARCHAR,
+             HANDICS_HIGH VARCHAR,
+             T_HIGH VARCHAR,
+             T_LOW VARCHAR
+    
+            )''')
 
-        print("таблица live_games создана")
-        con.commit()
+            print("таблица live_games создана")
+            con.commit()
+        except Exception as e:
+            print('Ошибка', e)
         con.close()
 
     # fill data base
