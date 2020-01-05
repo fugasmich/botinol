@@ -13,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/botinol$botcompot.coverage" NAME="botcompot Coverage Results" MODIFIED="1578086187712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/botinol$botcompot.coverage" NAME="botcompot Coverage Results" MODIFIED="1578244815110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/botinol$Bot_compot__1_.coverage" NAME="Bot_compot (1) Coverage Results" MODIFIED="1577655052634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
     <SUITE FILE_PATH="coverage/botinol$ssss.coverage" NAME="ssss Coverage Results" MODIFIED="1577877993213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/melBEt$db_operate.coverage" NAME="db_operate Coverage Results" MODIFIED="1577199575328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -46,8 +46,8 @@
       <file leaf-file-name="live_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/live_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3504">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="-304">
+              <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
               <folding>
                 <element signature="e#39#48#0" expanded="true" />
               </folding>
@@ -362,20 +362,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577035636404</updated>
-    </task>
-    <task id="LOCAL-00020" summary="update unicode">
-      <created>1577833796880</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1577833796880</updated>
-    </task>
-    <task id="LOCAL-00021" summary="edit proc">
-      <created>1577861668626</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1577861668626</updated>
     </task>
     <task id="LOCAL-00022" summary="edit req">
       <created>1577861895785</created>
@@ -706,7 +692,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578243552491</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="localhost">
+      <created>1578243978672</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1578243978672</updated>
+    </task>
+    <task id="LOCAL-00070" summary="connection info">
+      <created>1578244297745</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1578244297745</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -725,11 +725,11 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50053304" side_tool="true" weight="0.46514162" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.46476966" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.4640523" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32897604" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" weight="0.32897604" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18283582" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18283582" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" visible="true" weight="0.15245202" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -779,7 +779,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="psycopg change in requirements" />
     <MESSAGE value="global changes" />
     <MESSAGE value="global changes_1" />
     <MESSAGE value="requirements uptodate" />
@@ -804,7 +803,8 @@
     <MESSAGE value="table creator" />
     <MESSAGE value="dataabase confugure" />
     <MESSAGE value="localhost" />
-    <option name="LAST_COMMIT_MESSAGE" value="localhost" />
+    <MESSAGE value="connection info" />
+    <option name="LAST_COMMIT_MESSAGE" value="connection info" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1024,8 +1024,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/live_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3504">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="-304">
+          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
           <folding>
             <element signature="e#39#48#0" expanded="true" />
           </folding>

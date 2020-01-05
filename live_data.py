@@ -23,7 +23,7 @@ from selenium import webdriver
 class ENUMS(Enum):
     DATABASE_NAME = 'melbet'
     HOST = '127.0.0.1'
-    USER = 'postgres'
+    USER = 'dimsan'
     PASSWORD = 'domi21092012nika'
     PORT = '5432'
     VS = "~vSv~ "
@@ -77,6 +77,7 @@ class LiveData():
         '''Connect to an existing database'''
         con = psycopg2.connect()
         try:
+            print('connection start')
             con = psycopg2.connect(database=ENUMS.DATABASE_NAME.value,
                                    user=ENUMS.USER.value,
                                    password=ENUMS.PASSWORD.value,
