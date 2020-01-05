@@ -83,8 +83,7 @@ class LiveData():
                                    host=ENUMS.HOST.value,
                                    port=ENUMS.PORT.value)
 
-
-            logging.info('connection is is success')
+            print('suCCESSSS')
         except ConnectionError as ex:
             print(ex, 'ОШИБКА')
         return con
@@ -252,7 +251,6 @@ class LiveData():
         print('try to create the live_games table')
         con = self.open_connect()
         cur = con.cursor()
-
         try:
             cur.execute('''CREATE TABLE  if not exists live_games
              (ID VARCHAR,
