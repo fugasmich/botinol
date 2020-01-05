@@ -46,8 +46,8 @@
       <file leaf-file-name="live_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/live_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-304">
-              <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+            <state relative-caret-position="96">
+              <caret line="280" column="27" lean-forward="true" selection-start-line="280" selection-start-column="27" selection-end-line="280" selection-end-column="27" />
               <folding>
                 <element signature="e#39#48#0" expanded="true" />
               </folding>
@@ -362,20 +362,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577035636404</updated>
-    </task>
-    <task id="LOCAL-00022" summary="edit req">
-      <created>1577861895785</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1577861895785</updated>
-    </task>
-    <task id="LOCAL-00023" summary="edit path gecko">
-      <created>1577865983823</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1577865983823</updated>
     </task>
     <task id="LOCAL-00024" summary="edit path gecko">
       <created>1577866190895</created>
@@ -706,7 +692,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578244297745</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="connection info">
+      <created>1578244828361</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1578244828361</updated>
+    </task>
+    <task id="LOCAL-00072" summary="connection info">
+      <created>1578245220544</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1578245220544</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -1024,8 +1024,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/live_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+        <state relative-caret-position="96">
+          <caret line="280" column="27" lean-forward="true" selection-start-line="280" selection-start-column="27" selection-end-line="280" selection-end-column="27" />
           <folding>
             <element signature="e#39#48#0" expanded="true" />
           </folding>

@@ -75,18 +75,15 @@ class LiveData():
 
     def open_connect(self):
         '''Connect to an existing database'''
-        con = psycopg2.connect()
-        try:
-            print('connection start')
-            con = psycopg2.connect(database=ENUMS.DATABASE_NAME.value,
-                                   user=ENUMS.USER.value,
-                                   password=ENUMS.PASSWORD.value,
-                                   host=ENUMS.HOST.value,
-                                   port=ENUMS.PORT.value)
+        print('connection start')
+        con = psycopg2.connect(database=ENUMS.DATABASE_NAME.value,
+                               user=ENUMS.USER.value,
+                               password=ENUMS.PASSWORD.value,
+                               host=ENUMS.HOST.value,
+                               port=ENUMS.PORT.value)
 
-            print('suCCESSSS')
-        except ConnectionError as ex:
-            print(ex, 'ОШИБКА')
+        print('suCCESSSS')
+
         return con
 
 
@@ -252,15 +249,8 @@ class LiveData():
         print('try to create the live_games table')
         try:
             print('connection start')
-            con = psycopg2.connect(database=ENUMS.DATABASE_NAME.value,
-                                   user=ENUMS.USER.value,
-                                   password=ENUMS.PASSWORD.value,
-                                   host=ENUMS.HOST.value,
-                                   port=ENUMS.PORT.value)
-
-
+            con = self.open_connect()
             cur = con.cursor()
-
             cur.execute('''CREATE TABLE  if not exists live_games
              (ID VARCHAR,
              TEAMS VARCHAR,
