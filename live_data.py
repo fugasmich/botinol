@@ -22,7 +22,7 @@ from selenium import webdriver
 
 class ENUMS(Enum):
     DATABASE_NAME = 'melbet'
-    HOST = '192.168.31.160'
+    HOST = 'localhost'
     USER = 'postgres'
     PASSWORD = 'domi21092012nika'
     PORT = '5432'
