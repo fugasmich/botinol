@@ -22,7 +22,7 @@ from selenium import webdriver
 
 class ENUMS(Enum):
     DATABASE_NAME = 'melbet'
-    HOST = '127.0.0.1'
+    HOST = '192.168.31.160'
     USER = 'dimsan'
     PASSWORD = 'domi21092012nika'
     PORT = '5432'
@@ -250,9 +250,17 @@ class LiveData():
     def table_create(self):
 
         print('try to create the live_games table')
-        con = self.open_connect()
-        cur = con.cursor()
         try:
+            print('connection start')
+            con = psycopg2.connect(database=ENUMS.DATABASE_NAME.value,
+                                   user=ENUMS.USER.value,
+                                   password=ENUMS.PASSWORD.value,
+                                   host=ENUMS.HOST.value,
+                                   port=ENUMS.PORT.value)
+
+
+            cur = con.cursor()
+
             cur.execute('''CREATE TABLE  if not exists live_games
              (ID VARCHAR,
              TEAMS VARCHAR,
@@ -273,9 +281,11 @@ class LiveData():
 
             print("таблица live_games создана")
             con.commit()
-        except Exception as e:
-            print('Ошибка', e)
-        con.close()
+            print('suCCESSSS')
+            con.close()
+        except ConnectionError as ex:
+            print(ex, 'ОШИБКА')
+
 
     # fill data base
     def fill_DB_data(self):
