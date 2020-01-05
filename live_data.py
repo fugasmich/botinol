@@ -22,7 +22,7 @@ from selenium import webdriver
 
 class ENUMS(Enum):
     DATABASE_NAME = 'melbet'
-    HOST = 'localhost'
+    HOST = '127.0.0.1'
     USER = 'postgres'
     PASSWORD = 'domi21092012nika'
     PORT = '5432'
@@ -248,13 +248,8 @@ class LiveData():
             print(self.teams[0])
     # create database
     def table_create(self):
-        # con = psycopg2.connect(
-        #     database="postgres",
-        #     user="dimsan",
-        #     password="domi21092012nika",
-        #     host="127.0.0.1",
-        #     port="5432"
-        # )
+
+        print('try to create the live_games table')
         con = self.open_connect()
         cur = con.cursor()
 

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1ff2a5d6-8c97-4c0a-9d19-a432698ec314" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/live_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/live_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,8 +46,8 @@
       <file leaf-file-name="live_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/live_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3270">
-              <caret line="386" column="27" lean-forward="true" selection-start-line="386" selection-start-column="27" selection-end-line="386" selection-end-column="27" />
+            <state relative-caret-position="-3504">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#39#48#0" expanded="true" />
               </folding>
@@ -110,8 +111,8 @@
       <file leaf-file-name="BetOddClass.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BetOddClass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="35" column="11" selection-start-line="24" selection-start-column="2" selection-end-line="41" selection-end-column="19" />
+            <state relative-caret-position="320">
+              <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
               <folding>
                 <element signature="e#39#54#0" expanded="true" />
               </folding>
@@ -361,20 +362,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577035636404</updated>
-    </task>
-    <task id="LOCAL-00018" summary="update compot">
-      <created>1577832768370</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1577832768370</updated>
-    </task>
-    <task id="LOCAL-00019" summary="some updates">
-      <created>1577832928355</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1577832928355</updated>
     </task>
     <task id="LOCAL-00020" summary="update unicode">
       <created>1577833796880</created>
@@ -705,7 +692,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578176851674</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="dataabase confugure">
+      <created>1578243221193</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1578243221193</updated>
+    </task>
+    <task id="LOCAL-00068" summary="localhost">
+      <created>1578243552491</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1578243552491</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -778,7 +779,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="req update" />
     <MESSAGE value="psycopg change in requirements" />
     <MESSAGE value="global changes" />
     <MESSAGE value="global changes_1" />
@@ -803,7 +803,8 @@
     <MESSAGE value="bot upd" />
     <MESSAGE value="table creator" />
     <MESSAGE value="dataabase confugure" />
-    <option name="LAST_COMMIT_MESSAGE" value="dataabase confugure" />
+    <MESSAGE value="localhost" />
+    <option name="LAST_COMMIT_MESSAGE" value="localhost" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -969,16 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BetOddClass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="35" column="11" selection-start-line="24" selection-start-column="2" selection-end-line="41" selection-end-column="19" />
-          <folding>
-            <element signature="e#39#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mb.log" />
     <entry file="file://$PROJECT_DIR$/geckodriver.log" />
     <entry file="file://$PROJECT_DIR$/Procfile">
@@ -1021,10 +1012,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BetOddClass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+          <folding>
+            <element signature="e#39#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/live_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3270">
-          <caret line="386" column="27" lean-forward="true" selection-start-line="386" selection-start-column="27" selection-end-line="386" selection-end-column="27" />
+        <state relative-caret-position="-3504">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#39#48#0" expanded="true" />
           </folding>
