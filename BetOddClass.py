@@ -264,14 +264,14 @@ class BetODD():
 
     def find_max_score(self):
         self.game_best_score.clear()
-        sql = '''SELECT teams, MAX (summ_score) FROM live_games GROUP BY teams,timer HAVING MAX(summ_score) >= 2'''
+        sql = '''SELECT teams, MAX (summ_score) FROM live_games GROUP BY teams HAVING MAX(summ_score) >= 2'''
 
         con = self.open_connect()
         cur = con.cursor()
         cur.execute(sql)
         rows = cur.fetchall()
         for row in rows:
-           self.game_best_score.append(row[0]+' нахуярили '+str(row[2])+' штук(и)' + 'за '+row[1])
+           self.game_best_score.append(row[0]+' нахуярили '+str(row[1])+' штук(и)' )
 
         if(len(self.game_best_score)) == 0:
             self.game_best_score.append("пока как-то вяленько.....")
