@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ff2a5d6-8c97-4c0a-9d19-a432698ec314" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botcompot.py" beforeDir="false" afterPath="$PROJECT_DIR$/botcompot.py" afterDir="false" />
-    </list>
+    <list default="true" id="1ff2a5d6-8c97-4c0a-9d19-a432698ec314" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -356,13 +353,6 @@
       <option name="presentableId" value="Default" />
       <updated>1577035636404</updated>
     </task>
-    <task id="LOCAL-00033" summary="requirements uptodate">
-      <created>1578007139528</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1578007139528</updated>
-    </task>
     <task id="LOCAL-00034" summary="test db">
       <created>1578079528463</created>
       <option name="number" value="00034" />
@@ -699,7 +689,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578344292153</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="betodd edit">
+      <created>1578346413447</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1578346413447</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -713,7 +710,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1448" y="57" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50053304" side_tool="true" weight="0.46514162" />
@@ -772,7 +768,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="livedata bot_compot comment livedata class" />
     <MESSAGE value="in bot adding button update,live data return chrome browser" />
     <MESSAGE value="in bot adding button update,live data return firefox" />
     <MESSAGE value="add geckopath" />
@@ -797,7 +792,8 @@
     <MESSAGE value="edit some bugs" />
     <MESSAGE value="chrome configurate" />
     <MESSAGE value="coma in createtable" />
-    <option name="LAST_COMMIT_MESSAGE" value="coma in createtable" />
+    <MESSAGE value="betodd edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="betodd edit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

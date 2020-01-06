@@ -113,7 +113,7 @@ class BetODD():
                     ''' insert data from live table'''
                     if row[11] == '0':
                         self.update_data_from_live(row[0])
-                        self.find_max_score(row[0])
+                        # self.find_max_score(row[0])
 
         logging.info('data by time intervals collected')
         con.commit()
@@ -262,7 +262,7 @@ class BetODD():
         con.close()
         return res
 
-    def find_max_score(self, id):
+    def find_max_score(self):
         self.game_best_score.clear()
         sql = '''SELECT teams, MAX (summ_score) FROM live_games GROUP BY teams HAVING MAX(summ_score) >= 2'''
 
@@ -313,6 +313,7 @@ class BetODD():
         self.check_score_max()
         self.get_data_by_time()
         self.check_for_changes()
+        self.find_max_score()
 
 
 
