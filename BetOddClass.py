@@ -4,7 +4,7 @@ import logging
 
 import psycopg2
 from enum import Enum
-from termcolor import colored
+
 
 class ENUMS(Enum):
     DATABASE_NAME = 'melbet'

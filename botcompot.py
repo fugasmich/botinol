@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import time
+
 
 from telegram import Update, Bot
 from telegram import KeyboardButton
@@ -11,7 +11,7 @@ from telegram.ext import Filters
 from telegram.ext import MessageHandler
 from telegram.utils.request import Request
 
-from botinol.BetOddClass import BetODD
+from BetOddClass import BetODD
 
 button_tasher ='Чё там с кэфами'
 button_goals_summ = 'максимум забитых голов'
