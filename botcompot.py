@@ -13,7 +13,7 @@ from telegram.utils.request import Request
 
 from BetOddClass import BetODD
 
-button_tasher ='Чё там с кэфами'
+button_tasher ='Чё там с кэфами?'
 button_goals_summ = 'максимум забитых голов'
 button_update = 'обновить данные'
 
@@ -43,11 +43,15 @@ def button_tasher_handler(update: Update, context: CallbackContext):
             update.message.reply_text(
                 text=i,
             )
-    else:
+    elif len(betOdd.t) > 0:
         for k in betOdd.t:
             update.message.reply_text(
                 text=k,
             )
+    else:
+        update.message.reply_text(
+            text='пока тишина....',
+        )
 
 def button_maxgoals_handler(update: Update, context: CallbackContext):
         betOdd.init_betodds()

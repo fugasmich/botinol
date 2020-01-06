@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1ff2a5d6-8c97-4c0a-9d19-a432698ec314" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/livescrp.py" beforeDir="false" afterPath="$PROJECT_DIR$/livescrp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botcompot.py" beforeDir="false" afterPath="$PROJECT_DIR$/botcompot.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="botcompot.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="botcompot.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/botcompot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="240">
+              <caret line="45" column="27" lean-forward="true" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
               <folding>
                 <element signature="e#25#57#0" expanded="true" />
               </folding>
@@ -88,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BetOddClass.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BetOddClass.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BetOddClass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="246" column="61" selection-start-line="246" selection-start-column="51" selection-end-line="246" selection-end-column="61" />
+            <state relative-caret-position="-1692">
+              <caret line="145" column="37" lean-forward="true" selection-start-line="145" selection-start-column="37" selection-end-line="145" selection-end-column="37" />
               <folding>
                 <element signature="e#1#16#0" expanded="true" />
               </folding>
@@ -103,8 +103,8 @@
       <file leaf-file-name="livescrp.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/livescrp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-924">
-              <caret line="255" column="31" lean-forward="true" selection-start-line="255" selection-start-column="31" selection-end-line="255" selection-end-column="31" />
+            <state relative-caret-position="4">
+              <caret line="258" column="39" lean-forward="true" selection-start-line="258" selection-start-column="39" selection-end-line="258" selection-end-column="39" />
               <folding>
                 <element signature="e#39#48#0" expanded="true" />
               </folding>
@@ -157,8 +157,8 @@
         <option value="$PROJECT_DIR$/tgbot.service" />
         <option value="$PROJECT_DIR$/liveDatacombiner.service" />
         <option value="$PROJECT_DIR$/BetOddClass.py" />
-        <option value="$PROJECT_DIR$/botcompot.py" />
         <option value="$PROJECT_DIR$/livescrp.py" />
+        <option value="$PROJECT_DIR$/botcompot.py" />
       </list>
     </option>
   </component>
@@ -355,20 +355,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577035636404</updated>
-    </task>
-    <task id="LOCAL-00031" summary="requirements uptodate">
-      <created>1578005147863</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1578005147863</updated>
-    </task>
-    <task id="LOCAL-00032" summary="requirements uptodate">
-      <created>1578005403467</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1578005403467</updated>
     </task>
     <task id="LOCAL-00033" summary="requirements uptodate">
       <created>1578007139528</created>
@@ -699,7 +685,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578342626724</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="chrome configurate">
+      <created>1578343681167</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1578343681167</updated>
+    </task>
+    <task id="LOCAL-00081" summary="coma in createtable">
+      <created>1578344292152</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1578344292153</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -772,7 +772,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="livedata firefox driver change" />
     <MESSAGE value="livedata bot_compot comment livedata class" />
     <MESSAGE value="in bot adding button update,live data return chrome browser" />
     <MESSAGE value="in bot adding button update,live data return firefox" />
@@ -797,7 +796,8 @@
     <MESSAGE value="edit live data scrapper, line matches, logging" />
     <MESSAGE value="edit some bugs" />
     <MESSAGE value="chrome configurate" />
-    <option name="LAST_COMMIT_MESSAGE" value="chrome configurate" />
+    <MESSAGE value="coma in createtable" />
+    <option name="LAST_COMMIT_MESSAGE" value="coma in createtable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1001,35 +1001,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/botcompot.py">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BetOddClass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="-1692">
+          <caret line="145" column="37" lean-forward="true" selection-start-line="145" selection-start-column="37" selection-end-line="145" selection-end-column="37" />
           <folding>
-            <element signature="e#25#57#0" expanded="true" />
+            <element signature="e#1#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/livescrp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-924">
-          <caret line="255" column="31" lean-forward="true" selection-start-line="255" selection-start-column="31" selection-end-line="255" selection-end-column="31" />
+        <state relative-caret-position="4">
+          <caret line="258" column="39" lean-forward="true" selection-start-line="258" selection-start-column="39" selection-end-line="258" selection-end-column="39" />
           <folding>
             <element signature="e#39#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BetOddClass.py">
+    <entry file="file://$PROJECT_DIR$/botcompot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="246" column="61" selection-start-line="246" selection-start-column="51" selection-end-line="246" selection-end-column="61" />
+        <state relative-caret-position="240">
+          <caret line="45" column="27" lean-forward="true" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
           <folding>
-            <element signature="e#1#16#0" expanded="true" />
+            <element signature="e#25#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
