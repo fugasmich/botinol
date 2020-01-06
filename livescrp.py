@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 from enum import Enum
 from selenium import webdriver
 
-from botinol.BetOddClass import BetODD
+from BetOddClass import BetODD
 
 
 class ENUMS(Enum):
