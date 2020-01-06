@@ -261,7 +261,7 @@ class Scrapperlive():
              HANDICS_HIGH VARCHAR,
              T_HIGH VARCHAR,
              T_LOW VARCHAR,
-             summ_score varchar
+             summ_score INTEGER
             )''')
 
             logging.info('live_games table was created ')
