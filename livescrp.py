@@ -260,7 +260,7 @@ class Scrapperlive():
              HANDICF_LOW VARCHAR,
              HANDICS_HIGH VARCHAR,
              T_HIGH VARCHAR,
-             T_LOW VARCHAR
+             T_LOW VARCHAR,
              summ_score varchar
             )''')
 
