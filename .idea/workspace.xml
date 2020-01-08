@@ -105,7 +105,7 @@
       <file leaf-file-name="botcompot.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/botcompot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
+            <state relative-caret-position="560">
               <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
               <folding>
                 <element signature="e#25#57#0" expanded="true" />
@@ -140,8 +140,8 @@
       <file leaf-file-name="BetOddClass.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BetOddClass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="277" column="20" lean-forward="true" selection-start-line="277" selection-start-column="20" selection-end-line="277" selection-end-column="20" />
+            <state relative-caret-position="1026">
+              <caret line="285" column="91" lean-forward="true" selection-start-line="285" selection-start-column="91" selection-end-line="285" selection-end-column="91" />
               <folding>
                 <element signature="e#1#16#0" expanded="true" />
               </folding>
@@ -152,7 +152,7 @@
       <file leaf-file-name="livescrp.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/livescrp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
+            <state relative-caret-position="2397">
               <caret line="264" column="17" lean-forward="true" selection-start-line="264" selection-start-column="17" selection-end-line="264" selection-end-column="17" />
               <folding>
                 <element signature="e#39#48#0" expanded="true" />
@@ -232,6 +232,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,7 +244,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -404,20 +404,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577035636404</updated>
-    </task>
-    <task id="LOCAL-00036" summary="test db">
-      <created>1578082539991</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1578082539991</updated>
-    </task>
-    <task id="LOCAL-00037" summary="test db">
-      <created>1578083297508</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1578083297508</updated>
     </task>
     <task id="LOCAL-00038" summary="livedata scrapping">
       <created>1578084319319</created>
@@ -748,7 +734,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578347260238</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="fix find max score">
+      <created>1578347856370</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1578347856370</updated>
+    </task>
+    <task id="LOCAL-00086" summary="fix find max score">
+      <created>1578348375830</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1578348375830</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -771,9 +771,9 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32897604" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" weight="0.32897604" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25501433" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26575932" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.20487106" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.079512894" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
@@ -792,26 +792,26 @@
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32897604" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.10341151" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46514162" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32897604" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Database" order="4" weight="0.16684435" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.32897604" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32897604" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -821,7 +821,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="in bot adding button update,live data return firefox" />
     <MESSAGE value="add geckopath" />
     <MESSAGE value="add gecko" />
     <MESSAGE value="add chromedriver" />
@@ -846,7 +845,8 @@
     <MESSAGE value="coma in createtable" />
     <MESSAGE value="betodd edit" />
     <MESSAGE value="find max score" />
-    <option name="LAST_COMMIT_MESSAGE" value="find max score" />
+    <MESSAGE value="fix find max score" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix find max score" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -996,13 +996,6 @@
     <entry file="file://$PROJECT_DIR$/ssss.py" />
     <entry file="file://$PROJECT_DIR$/mb.log" />
     <entry file="file://$PROJECT_DIR$/geckodriver.log" />
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/subprocess.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1033,7 +1026,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/botcompot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="560">
           <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
           <folding>
             <element signature="e#25#57#0" expanded="true" />
@@ -1050,7 +1043,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/livescrp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
+        <state relative-caret-position="2397">
           <caret line="264" column="17" lean-forward="true" selection-start-line="264" selection-start-column="17" selection-end-line="264" selection-end-column="17" />
           <folding>
             <element signature="e#39#48#0" expanded="true" />
@@ -1058,10 +1051,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BetOddClass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="277" column="20" lean-forward="true" selection-start-line="277" selection-start-column="20" selection-end-line="277" selection-end-column="20" />
+        <state relative-caret-position="1026">
+          <caret line="285" column="91" lean-forward="true" selection-start-line="285" selection-start-column="91" selection-end-line="285" selection-end-column="91" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
           </folding>

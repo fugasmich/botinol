@@ -142,6 +142,13 @@ class BetODD():
         con.commit()
         con.close()
 
+    def remove_dragon_ligue(not_dragon:str):
+
+        if '4x4' not in not_dragon and '5x5' not in not_dragon and '7x7' not in not_dragon:
+            return True
+        else:
+            return False
+
     def check_for_changes(self):
         print('checking for changes')
         ''' check for coefficients which fallen! It mean the team '''
@@ -173,7 +180,8 @@ class BetODD():
         rows_res = cur.fetchall()
         for r in rows_res:
             print('here')
-            if r[9] is not None or r[10] is not None:
+            if r[9] is not None or r[10] is not None and  '4x4' not in r[1]\
+                    and '5x5' not in r[1] and '7x7' not in r[1]:
                 if float(r[9]) > 0:
                     self.downcoefList_first.append(r[1] + " " + 'тащит!!! кэф  первого просел на ' + " " + "%.2f" % (
                                 float(r[9])) + " " + '%')
@@ -182,13 +190,16 @@ class BetODD():
                     self.downcoefList_second.append(r[1] + " " + 'тащит!!! кэф  второго просел на ' + " " + "%.2f" % (
                                  float(r[10])) + " " + '%')
 
-                else:
-                    self.t.append('следим за матчем: ' + r[1])
-                    continue
+                # else:
+                #     self.t.append('следим за матчем: ' + r[1])
+                #     continue
         con.commit()
         con.close()
         print(len(self.t))
         return self.t
+
+
+
 
     def clear_table_line(self):
         list_line_id = []
@@ -271,7 +282,8 @@ class BetODD():
         cur.execute(sql)
         rows = cur.fetchall()
         for row in rows:
-           self.game_best_score.append(row[0]+' нахуярили '+str(row[1])+' штук(и)' )
+            if   '4x4' not in row[0] and '5x5' not in row[0] and '7x7' not in row[0]:
+                    self.game_best_score.append(row[0]+' нахуярили '+str(row[1])+' штук(и)')
 
         if(len(self.game_best_score)) == 0:
             self.game_best_score.append("пока как-то вяленько.....")
