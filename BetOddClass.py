@@ -180,8 +180,8 @@ class BetODD():
         rows_res = cur.fetchall()
         for r in rows_res:
             print('here')
-            if r[9] is not None or r[10] is not None and  '4x4' not in r[1]\
-                    and '5x5' not in r[1] and '7x7' not in r[1]:
+            if r[9] is not None or r[10] is not None or '4x4' not in r[1]\
+                    or '5x5' not in r[1] or '7x7' not in r[1] or '6x6' not in r[1] or 'Dragon' not in r[1]:
                 if float(r[9]) > 0:
                     self.downcoefList_first.append(r[1] + " " + 'тащит!!! кэф  первого просел на ' + " " + "%.2f" % (
                                 float(r[9])) + " " + '%')
@@ -281,9 +281,10 @@ class BetODD():
         cur = con.cursor()
         cur.execute(sql)
         rows = cur.fetchall()
-        for row in rows:
-            if   '4x4' not in row[0] and '5x5' not in row[0] and '7x7' not in row[0]:
-                    self.game_best_score.append(row[0]+' нахуярили '+str(row[1])+' штук(и)')
+        for r in rows:
+            if  '4x4' not in r[1]\
+                    or '5x5' not in r[1] or '7x7' not in r[1] or '6x6' not in r[1] or 'Dragon' not in r[1]:
+                    self.game_best_score.append(r[0]+' нахуярили '+str(r[1])+' штук(и)')
 
         if(len(self.game_best_score)) == 0:
             self.game_best_score.append("пока как-то вяленько.....")
