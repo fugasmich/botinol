@@ -140,8 +140,8 @@
       <file leaf-file-name="BetOddClass.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BetOddClass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1026">
-              <caret line="285" column="91" lean-forward="true" selection-start-line="285" selection-start-column="91" selection-end-line="285" selection-end-column="91" />
+            <state relative-caret-position="594">
+              <caret line="281" column="24" lean-forward="true" selection-start-line="281" selection-start-column="24" selection-end-line="281" selection-end-column="24" />
               <folding>
                 <element signature="e#1#16#0" expanded="true" />
               </folding>
@@ -152,8 +152,8 @@
       <file leaf-file-name="livescrp.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/livescrp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2397">
-              <caret line="264" column="17" lean-forward="true" selection-start-line="264" selection-start-column="17" selection-end-line="264" selection-end-column="17" />
+            <state relative-caret-position="541">
+              <caret line="348" column="18" lean-forward="true" selection-start-line="348" selection-start-column="18" selection-end-line="348" selection-end-column="18" />
               <folding>
                 <element signature="e#39#48#0" expanded="true" />
               </folding>
@@ -404,20 +404,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577035636404</updated>
-    </task>
-    <task id="LOCAL-00038" summary="livedata scrapping">
-      <created>1578084319319</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1578084319319</updated>
-    </task>
-    <task id="LOCAL-00039" summary="livedata scrapping">
-      <created>1578084516032</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1578084516032</updated>
     </task>
     <task id="LOCAL-00040" summary="livedata firefox driver change">
       <created>1578084673691</created>
@@ -748,7 +734,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578348375830</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="remove dragon">
+      <created>1578482425419</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1578482425419</updated>
+    </task>
+    <task id="LOCAL-00088" summary="remove dragon">
+      <created>1578482762923</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1578482762923</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -821,7 +821,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add geckopath" />
     <MESSAGE value="add gecko" />
     <MESSAGE value="add chromedriver" />
     <MESSAGE value="chromeoptions" />
@@ -846,7 +845,8 @@
     <MESSAGE value="betodd edit" />
     <MESSAGE value="find max score" />
     <MESSAGE value="fix find max score" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix find max score" />
+    <MESSAGE value="remove dragon" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove dragon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1041,16 +1041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/livescrp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2397">
-          <caret line="264" column="17" lean-forward="true" selection-start-line="264" selection-start-column="17" selection-end-line="264" selection-end-column="17" />
-          <folding>
-            <element signature="e#39#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1058,10 +1048,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/livescrp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="348" column="18" lean-forward="true" selection-start-line="348" selection-start-column="18" selection-end-line="348" selection-end-column="18" />
+          <folding>
+            <element signature="e#39#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BetOddClass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="285" column="91" lean-forward="true" selection-start-line="285" selection-start-column="91" selection-end-line="285" selection-end-column="91" />
+        <state relative-caret-position="594">
+          <caret line="281" column="24" lean-forward="true" selection-start-line="281" selection-start-column="24" selection-end-line="281" selection-end-column="24" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
           </folding>

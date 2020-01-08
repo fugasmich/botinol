@@ -282,8 +282,8 @@ class BetODD():
         cur.execute(sql)
         rows = cur.fetchall()
         for r in rows:
-            if  '4x4' not in r[1]\
-                    or '5x5' not in r[1] or '7x7' not in r[1] or '6x6' not in r[1] or 'Dragon' not in r[1]:
+            if  '4x4' not in r[0]\
+                    or '5x5' not in r[0] or '7x7' not in r[0] or '6x6' not in r[0] or 'Dragon' not in r[0]:
                     self.game_best_score.append(r[0]+' нахуярили '+str(r[1])+' штук(и)')
 
         if(len(self.game_best_score)) == 0:
