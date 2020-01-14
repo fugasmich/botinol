@@ -11,9 +11,9 @@ from telegram.ext import Filters
 from telegram.ext import MessageHandler
 from telegram.utils.request import Request
 
-from BetOddClass import BetODD
+from bodd import BetODD
 
-button_tasher ='Чё там с кэфами?'
+button_tasher ='Чё там с кэфами'
 button_goals_summ = 'максимум забитых голов'
 button_update = 'обновить данные'
 
@@ -32,30 +32,27 @@ def log_error(f):
 
 
 def button_tasher_handler(update: Update, context: CallbackContext):
-    betOdd.init_betodds()
-    if len(betOdd.downcoefList_first) > 0:
-        for j in betOdd.downcoefList_first:
+    betOdd.check_for_best_coef()
+    if len(betOdd.downcoefList) > 0:
+
+        for j in betOdd.downcoefList:
             update.message.reply_text(
                 text=j,
             )
-    elif len(betOdd.downcoefList_second) > 0:
-        for i in betOdd.downcoefList_second:
+    elif len(betOdd.waiting_for) > 0:
+        for i in betOdd.waiting_for:
             update.message.reply_text(
                 text=i,
             )
-    elif len(betOdd.t) > 0:
-        for k in betOdd.t:
-            update.message.reply_text(
-                text=k,
-            )
     else:
         update.message.reply_text(
-            text='пока тишина....',
+            text='ожидаем....',
         )
 
-def button_maxgoals_handler(update: Update, context: CallbackContext):
-        betOdd.init_betodds()
 
+
+def button_maxgoals_handler(update: Update, context: CallbackContext):
+        betOdd.find_max_score()
         for j in betOdd.game_best_score:
             update.message.reply_text(
                 text=j,

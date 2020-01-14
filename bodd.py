@@ -7,8 +7,8 @@ from enum import Enum
 
 
 class ENUMS(Enum):
-    DATABASE_NAME = 'melbet'
-    HOST = '192.168.31.160'
+    DATABASE_NAME = 'postgres'
+    HOST = 'localhost'
     USER = 'dimsan'
     PASSWORD = 'domi21092012nika'
     PORT = '5432'
@@ -30,8 +30,8 @@ class ENUMS(Enum):
 
 
 class BetODD():
-    t = []
-    downcoefList_first = []
+    waiting_for = []
+    downcoefList = []
     downcoefList_second = []
     game_best_score=[]
     # //logging.basicConfig(filename="mb.log", level=logging.INFO)
@@ -57,16 +57,15 @@ class BetODD():
         '''find and put the values which timescore is none, it  means
         game is waiting for begining - first method'''
         get_data = "SELECT * from live_games "
-        set_data = "insert into line_games (id, teams,score, wf_coef, drw_coef, wsec_coef) VALUES (%s, %s, %s, %s, %s, %s)"
+        set_data = "insert into line_games (id, teams,score,timer, wf_coef, drw_coef, wsec_coef) VALUES (%s, %s, %s, %s, %s, %s, %s)"
         con = self.open_connect()
         cur = con.cursor()
         cur.execute(get_data)
         rows = cur.fetchall()
         for row in rows:
             if row[3] == '\xa0':
-
                 try:
-                    cur.execute(set_data, (row[0], row[1], row[2], row[4], row[5], row[6]))
+                    cur.execute(set_data, (row[0], row[1], row[2], row[3], row[4], row[5], row[6]))
                     count += 1
                 except:
                     print('дубликат')
@@ -103,21 +102,57 @@ class BetODD():
         cur = con.cursor()
         cur.execute(sql)
         rows = cur.fetchall()
-
         for row in rows:
             if row[3] == '\xa0' or int(row[3][:2]) > 59 or len(row[3]) > 5:
                 continue
             else:
                 date_time_ob = datetime.datetime.strptime(row[3], '%M:%S')
                 if date_time_ob < date_time_max and date_time_ob > date_time_min:
+                    print("watch for matches")
                     ''' insert data from live table'''
-                    if row[11] == '0':
+
+                    if str(row[14]) == '0':
+                        print('zero')
                         self.update_data_from_live(row[0])
-                        # self.find_max_score(row[0])
+
 
         logging.info('data by time intervals collected')
         con.commit()
         con.close()
+    def clear_data_by_time(self):
+        '''
+               clear the data which time score is more than 17 minutes
+               '''
+        date_time_ob = '0'
+        logging.info('clear the data which time score is more than 17 minutes ')
+        date_time_max = datetime.datetime.strptime('15:00', '%M:%S')
+        sql = "Select * from line_games"
+        sql_winf = '''Update line_games set wf_change =%s where id=%s '''
+        sql_winsec = '''Update line_games set ws_change =%s where id=%s '''
+        sql_timer_set = '''Update line_games set timer =%s where id=%s '''
+        con = self.open_connect()
+        cur = con.cursor()
+        cur.execute(sql)
+        rows = cur.fetchall()
+        for row in rows:
+            if row[3] == '\xa0':
+                continue
+            try:
+                date_time_ob = datetime.datetime.strptime(row[3], '%M:%S')
+            except:
+                date_time_ob = datetime.datetime.strptime('00:00', '%M:%S')
+                cur.execute(sql_timer_set, ('00:00', row[0],))
+            if date_time_ob > date_time_max or row[11] != '0' or date_time_ob == '00:00':
+                    cur.execute(sql_winf, ('0', row[0],))
+                    cur.execute(sql_winsec, ('0', row[0],))
+
+
+
+
+        con.commit()
+        con.close()
+
+
 
     def create_line_table(self):
         logging.info("create line table")
@@ -136,70 +171,81 @@ class BetODD():
       WS_BY_TIME VARCHAR,
       WF_CHANGE VARCHAR,
       WS_CHANGE VARCHAR,
-      SUMM_SCORE varchar    
+      SUMM_SCORE VARCHAR    
       )''')
         logging.info("line Table created successfully")
         con.commit()
         con.close()
 
-    def remove_dragon_ligue(not_dragon:str):
-
-        if '4x4' not in not_dragon and '5x5' not in not_dragon and '7x7' not in not_dragon:
-            return True
-        else:
-            return False
-
-    def check_for_changes(self):
+    def put_the_changes(self):
+        coef_result_f = 0
+        coef_result_sec = 0
         print('checking for changes')
         ''' check for coefficients which fallen! It mean the team '''
-        self.t.clear()
-        self.downcoefList_first.clear()
+
+
         self.downcoefList_second.clear()
         sql = '''SELECT * FROM line_games'''
         sql_winf = '''Update line_games set wf_change =%s where id=%s '''
         sql_winsec = '''Update line_games set ws_change =%s where id=%s '''
-        sql_best_result = '''Select * from line_games'''
+
         con = self.open_connect()
         cur = con.cursor()
         cur.execute(sql)
         rows = cur.fetchall()
         for row in rows:
-            if row[7] is not None and row[7] != 'LCK':
-                print(row[7]+'txt')
-                res_1 = "%.2f" % (float(row[4]) - float(row[7]))
+            try:
+                coef_result_f = "%.2f" % (100 - ((float(row[7]) / float(row[4]))*100))
 
-            else:
-                res_1 = 0
-            if row[8] is not None and row[8] != 'LCK':
-                res_2 = "%.2f" % (float(row[6]) - float(row[8]))
-            else:
-                res_2 = 0
-            cur.execute(sql_winf, (float(res_1), row[0]))
-            cur.execute(sql_winsec, (float(res_2), row[0]))
-        cur.execute(sql_best_result)
-        rows_res = cur.fetchall()
-        for r in rows_res:
-            print('here')
-            if r[9] is not None or r[10] is not None or '4x4' not in r[1]\
-                    or '5x5' not in r[1] or '7x7' not in r[1] or '6x6' not in r[1] or 'Dragon' not in r[1]:
-                if float(r[9]) > 0:
-                    self.downcoefList_first.append(r[1] + " " + 'тащит!!! кэф  первого просел на ' + " " + "%.2f" % (
-                                float(r[9])) + " " + '%')
+            except:
+                logging.error('nullable in check_for_changes res_1')
+                coef_result_f = 0
 
-                elif float(r[10]) > 0:
-                    self.downcoefList_second.append(r[1] + " " + 'тащит!!! кэф  второго просел на ' + " " + "%.2f" % (
-                                 float(r[10])) + " " + '%')
+            try:
+                coef_result_sec = "%.2f" % (100 - ((float(row[8]) / float(row[6]))*100))
+            except:
+                logging.error('nullable in check_for_changes res_2 ')
+                coef_result_sec = 0
 
-                # else:
-                #     self.t.append('следим за матчем: ' + r[1])
-                #     continue
+            print(coef_result_f, coef_result_sec, 'here')
+            cur.execute(sql_winf, (float(coef_result_f), row[0],))
+            cur.execute(sql_winsec, (float(coef_result_sec), row[0],))
+
+
+
         con.commit()
         con.close()
-        print(len(self.t))
-        return self.t
 
 
+    def check_for_best_coef(self):
+        self.downcoefList.clear()
+        self.waiting_for.clear()
+        con = self.open_connect()
+        cur = con.cursor()
 
+        sql_best_result = '''Select * from line_games'''
+        cur.execute(sql_best_result)
+        rows_res = cur.fetchall()
+        cef = 0
+        second = 0
+
+        for r in rows_res:
+            if r[4] < r[6]:
+                cef = 100 - (float(r[4]) / float(r[6]) * 100)
+            elif r[6] < r[4]:
+                cef = 100 - (float(r[6]) / float(r[4]) * 100)
+            else:
+                if r[10] == r[9]:
+                    cef = 0
+
+            if float(r[9]) > 0 and float(r[9]):
+                self.downcoefList.append((str(r[1])+' - кэф первого просел на: '+str(r[9])+'%, '+' D:' + str(cef)))
+            if float(r[10]) > 0 and float(r[10]):
+                self.downcoefList.append((str(r[1]) + ' - кэф второго просел на: ' + str(r[10]) + '%, '+' D:' + str(cef)))
+            elif r[3] == '\xa0':
+                self.waiting_for.append((str(r[1]) + 'на подходе'))
+        con.commit()
+        con.close()
 
     def clear_table_line(self):
         list_line_id = []
@@ -211,11 +257,16 @@ class BetODD():
         sql_check_for_value = '''select * from line_games'''
         sql_find_val = '''select * from live_games where id = %s'''
         sql_drop_from_line = '''Delete from line_games where id=%s'''
+        sql_winf = '''Update line_games set wf_change =%s where id=%s '''
+        sql_winsec = '''Update line_games set ws_change =%s where id=%s '''
         con = self.open_connect()
         cur = con.cursor()
         cur.execute(sql_check_for_value)
         rows = cur.fetchall()
         for row in rows:
+            if str(row[11]) != '0':
+                cur.execute(sql_winf, ('0', row[0],))
+                cur.execute(sql_winsec, ('0', row[0],))
             list_line_id.append(row[0])
         for i in list_line_id:
             cur.execute(sql_find_val, (i,))
@@ -229,8 +280,7 @@ class BetODD():
         con.close()
 
     def update_data_from_live(self, id):
-
-
+        print('update data from live')
         '''
             check the value by id from line_games table
             get the new coeff value and put it into column by_time
@@ -249,7 +299,35 @@ class BetODD():
         con.commit()
         con.close()
 
+
+    def add_summscore_inlinegames(self):
+
+        '''
+        update the line games table set the new value
+         - sumscore to check it variations
+
+        '''
+
+        sql = '''select * from live_games'''
+        sql_isert_score = '''update line_games set summ_score = %s where id =%s'''
+        sql_timer_update = '''update line_games set timer = %s where id =%s'''
+        con = self.open_connect()
+        cur = con.cursor()
+        cur.execute(sql)
+        rows = cur.fetchall()
+        for row in rows:
+            id = row[0]
+            goals = row[14]
+            time = row[3]
+            cur.execute(sql_isert_score, (goals, id,))
+            cur.execute(sql_timer_update, (time, id,))
+        con.commit()
+        con.close()
+
+
+
     def check_score_max(self):
+
         '''
         check for max summ of goals
 
@@ -275,21 +353,20 @@ class BetODD():
 
     def find_max_score(self):
         self.game_best_score.clear()
-        sql = '''SELECT teams, MAX (summ_score) FROM live_games GROUP BY teams HAVING MAX(summ_score) >= 2'''
+        sql = '''SELECT teams, MAX (summ_score) FROM live_games GROUP BY teams HAVING MAX(summ_score) > 2'''
 
         con = self.open_connect()
         cur = con.cursor()
         cur.execute(sql)
         rows = cur.fetchall()
-        for r in rows:
-            if  '4x4' not in r[0]\
-                    or '5x5' not in r[0] or '7x7' not in r[0] or '6x6' not in r[0] or 'Dragon' not in r[0]:
-                    self.game_best_score.append(r[0]+' нахуярили '+str(r[1])+' штук(и)')
+        for row in rows:
+           self.game_best_score.append(row[0]+' накидали '+str(row[1])+' штук(и)')
 
         if(len(self.game_best_score)) == 0:
-            self.game_best_score.append("пока как-то вяленько.....")
+            self.game_best_score.append("Вяленько как-то")
         con.commit()
         con.close()
+
 
 
     def check_score_null(self):
@@ -321,12 +398,16 @@ class BetODD():
 
     def init_betodds(self):
         self.clear_table_line()
+        self.create_line_table()
         self.select_by_waiting()
         self.check_score_null()
-        self.check_score_max()
+        self.add_summscore_inlinegames()
         self.get_data_by_time()
-        self.check_for_changes()
-        self.find_max_score()
+        self.put_the_changes()
+        self.check_score_max()
+        self.add_summscore_inlinegames()
+        self.clear_data_by_time()
+
 
 
 
